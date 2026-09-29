@@ -1,0 +1,38 @@
+{
+  "stats": {
+    "minecraft:killed": {
+      "minecraft:pig": 38
+    },
+    "minecraft:mined": {
+      "calamity:terraria_log": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:porkchop": 100,
+      "calamity:terraria_wood": 12
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 7228,
+      "minecraft:walk_one_cm": 12753,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 38,
+      "minecraft:walk_under_water_one_cm": 2924,
+      "minecraft:damage_taken": 90,
+      "minecraft:play_time": 3614,
+      "minecraft:damage_dealt": 1420,
+      "minecraft:jump": 45,
+      "minecraft:time_since_death": 3614,
+      "minecraft:sprint_one_cm": 3665,
+      "minecraft:fall_one_cm": 3745,
+      "minecraft:total_world_time": 3951,
+      "minecraft:fly_one_cm": 99534,
+      "minecraft:walk_on_water_one_cm": 71,
+      "minecraft:sneak_time": 381
+    },
+    "minecraft:used": {
+      "calamity:blue_slime_spawn_egg": 1,
+      "calamity:copper_axe": 3,
+      "calamity:greatsword_of_judgement": 18
+    }
+  },
+  "DataVersion": 4790
+}

@@ -1,0 +1,43 @@
+{
+  "_fv": 89,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Pickaxe",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "crystyl_crusher_png",
+    "customModelName": "giant_item:crystal_crusher",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "crystyl_crusher_png",
+    "name": "Crystal Crusher",
+    "rarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      "CUSTOM:CalamityTab"
+    ],
+    "efficiency": 100.0,
+    "attackSpeed": 0.8,
+    "enchantability": 22,
+    "damageVsEntity": 400.0,
+    "usageCount": 0,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "mainhand",
+        "attribute": "ENTITY_REACH",
+        "amount": 1.0,
+        "operation": "ADD_MULTIPLIED_TOTAL"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

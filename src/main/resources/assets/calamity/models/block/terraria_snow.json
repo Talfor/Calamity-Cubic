@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "calamity:block/snow_block_placed_png",
+    "particle": "calamity:block/snow_block_placed_png"
+  }
+}

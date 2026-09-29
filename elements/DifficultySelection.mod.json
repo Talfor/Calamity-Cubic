@@ -1,0 +1,240 @@
+{
+  "_fv": 89,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 206,
+    "height": 142,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "uibackground_ds.png",
+          "use1Xscale": false,
+          "x": 114,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_normal_indicator_png",
+          "image": "normal_indicator_png.png",
+          "hoveredImage": "normal_selected.png",
+          "onClick": "SelectDifficulty0",
+          "x": 117,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_expert_indicator_png",
+          "image": "expert_indicator_png.png",
+          "hoveredImage": "expert_selected.png",
+          "onClick": "SelectDifficulty1",
+          "x": 168,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_master_indicator_png",
+          "image": "master_indicator_png.png",
+          "hoveredImage": "master_selected.png",
+          "onClick": "SelectDifficulty3",
+          "x": 220,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_legendary_indicator_png",
+          "image": "legendary_indicator_png.png",
+          "hoveredImage": "legendary_selected.png",
+          "onClick": "SelectDifficulty5",
+          "x": 272,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_revengeance_indicator_png",
+          "image": "revengeance_indicator_png.png",
+          "hoveredImage": "revengeance_selected.png",
+          "onClick": "SelectDifficulty2",
+          "displayCondition": "ReturnDifficultyContent",
+          "x": 169,
+          "y": 137,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_death_indicator_png",
+          "image": "death_indicator_png.png",
+          "hoveredImage": "death_selected.png",
+          "onClick": "SelectDifficulty4",
+          "displayCondition": "ReturnDifficultyContent",
+          "x": 220,
+          "y": 137,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_malice_indicator_png",
+          "image": "malice_indicator_png.png",
+          "hoveredImage": "malice_selected.png",
+          "onClick": "SelectDifficulty6",
+          "displayCondition": "ReturnDifficultyContent",
+          "x": 272,
+          "y": 137,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_ssbclassic_ssf_ss7the_vanilla_expe",
+          "text": {
+            "fixedValue": "§bClassic §f: §7The vanilla experience. No modifiers."
+          },
+          "width": 39,
+          "height": 39,
+          "x": 117,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_ss5expert_ssf_ss7unique_attack_pat",
+          "text": {
+            "fixedValue": "§5Expert §f: §7Unique attack patterns, increased health, and exclusive loot."
+          },
+          "width": 39,
+          "height": 39,
+          "x": 168,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_sscrevengeance_ssf_ss7expert_new",
+          "text": {
+            "fixedValue": "§cRevengeance §f: §7Expert + New AI Mechanics & §6Rage §7& §9Adrenaline§7."
+          },
+          "displayCondition": "ReturnDifficultyContent",
+          "width": 39,
+          "height": 39,
+          "x": 168,
+          "y": 137,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_ss4master_ssf_ss7greatly_increased",
+          "text": {
+            "fixedValue": "§4Master §f: §7Greatly increased damage & health, tougher mechanics, and exclusive vanity rewards."
+          },
+          "width": 39,
+          "height": 39,
+          "x": 220,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_ssddeath_ssf_ss7master_aggressiv",
+          "text": {
+            "fixedValue": "§dDeath §f: §7Master + Aggressive AIs, §6Rage §7& §9Adrenaline§7, and lethal mechanics."
+          },
+          "displayCondition": "ReturnDifficultyContent",
+          "width": 39,
+          "height": 39,
+          "x": 220,
+          "y": 137,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_ss6legendary_ssf_ss7master_furth",
+          "text": {
+            "fixedValue": "§6Legendary §f: §7Master + Further increased health & damage, impossibly hard mechanics."
+          },
+          "width": 39,
+          "height": 39,
+          "x": 272,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_ssjmalice_ssf_ss7death_legendary",
+          "text": {
+            "fixedValue": "§8Malice §f: §7Death & Legendary mechanics merged into pure suffering. §8Only for the Worthy."
+          },
+          "displayCondition": "ReturnDifficultyContent",
+          "width": 39,
+          "height": 39,
+          "x": 272,
+          "y": 137,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "calamitytitle.png",
+          "use1Xscale": true,
+          "x": 146,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cubictitlesmall.png",
+          "use1Xscale": true,
+          "x": 219,
+          "y": 83,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

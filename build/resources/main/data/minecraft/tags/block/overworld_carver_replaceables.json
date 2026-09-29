@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "calamity:terraria_sandstone",
+    "calamity:terraria_jungle_grass",
+    "calamity:terraria_dirt",
+    "calamity:terraria_mud",
+    "calamity:terraria_grass",
+    "calamity:terraria_snow",
+    "calamity:terraria_sand"
+  ]
+}

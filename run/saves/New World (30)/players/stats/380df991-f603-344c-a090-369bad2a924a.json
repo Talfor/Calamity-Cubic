@@ -1,0 +1,28 @@
+{
+  "stats": {
+    "minecraft:mined": {
+      "calamity:terraria_snow": 10
+    },
+    "minecraft:used": {
+      "calamity:copper_pickaxe": 10
+    },
+    "minecraft:picked_up": {
+      "calamity:terraria_snow": 10
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 563,
+      "minecraft:time_since_rest": 1684,
+      "minecraft:fall_one_cm": 3675,
+      "minecraft:walk_one_cm": 1455,
+      "minecraft:total_world_time": 1019,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 2304,
+      "minecraft:damage_taken": 260,
+      "minecraft:play_time": 932,
+      "minecraft:deaths": 1,
+      "minecraft:jump": 8,
+      "minecraft:time_since_death": 814
+    }
+  },
+  "DataVersion": 4790
+}

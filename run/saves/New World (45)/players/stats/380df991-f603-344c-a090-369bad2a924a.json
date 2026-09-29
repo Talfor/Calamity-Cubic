@@ -1,0 +1,102 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 27736,
+      "minecraft:walk_one_cm": 21991,
+      "minecraft:leave_game": 1,
+      "minecraft:walk_under_water_one_cm": 191011,
+      "minecraft:mob_kills": 8,
+      "minecraft:damage_taken": 350,
+      "minecraft:play_time": 24038,
+      "minecraft:damage_dealt": 3780,
+      "minecraft:jump": 388,
+      "minecraft:time_since_death": 15470,
+      "minecraft:drop": 12,
+      "minecraft:sprint_one_cm": 30912,
+      "minecraft:fall_one_cm": 21061,
+      "minecraft:total_world_time": 24254,
+      "minecraft:swim_one_cm": 26124,
+      "minecraft:fly_one_cm": 471177,
+      "minecraft:walk_on_water_one_cm": 73824,
+      "minecraft:crouch_one_cm": 440,
+      "minecraft:sneak_time": 2144,
+      "minecraft:deaths": 2
+    },
+    "minecraft:crafted": {
+      "minecraft:polished_tuff": 28
+    },
+    "minecraft:mined": {
+      "calamity:terraria_hellstone": 16,
+      "calamity:life_crystal": 1,
+      "calamity:terraria_stone": 687,
+      "calamity:terraria_dirt": 3,
+      "calamity:terraria_silver_ore": 3,
+      "calamity:terraria_platinum_ore": 11,
+      "minecraft:tuff": 38,
+      "calamity:terraria_copper_ore": 3,
+      "calamity:terraria_furnace": 1,
+      "minecraft:deepslate_iron_ore": 16,
+      "calamity:terraria_lead_ore": 4,
+      "calamity:terraria_sand": 71,
+      "calamity:work_bench": 2,
+      "calamity:terraria_log": 1,
+      "minecraft:raw_iron_block": 2
+    },
+    "minecraft:killed_by": {
+      "calamity:green_slime": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:nether_star": 1,
+      "calamity:work_bench": 2,
+      "calamity:terraria_silver_ore": 3,
+      "calamity:terraria_lead_ore": 4,
+      "calamity:terraria_platinum_ore": 11,
+      "calamity:terraria_dirt": 3,
+      "minecraft:raw_iron": 16,
+      "calamity:gel": 6,
+      "calamity:terraria_stone": 603,
+      "minecraft:tuff": 30,
+      "calamity:terraria_furnace": 1,
+      "minecraft:raw_iron_block": 2,
+      "calamity:terraria_sand": 72,
+      "calamity:terraria_hellstone": 16,
+      "calamity:coin_copper": 56,
+      "calamity:life_crystal_item": 2,
+      "calamity:terraria_wood": 11,
+      "calamity:terraria_copper_ore": 3
+    },
+    "minecraft:dropped": {
+      "minecraft:raw_iron": 16,
+      "minecraft:polished_tuff": 28,
+      "minecraft:nether_star": 1,
+      "calamity:life_crystal_item": 2,
+      "calamity:work_bench": 4,
+      "calamity:terraria_copper_ingot": 6,
+      "minecraft:tuff": 2,
+      "minecraft:raw_iron_block": 2
+    },
+    "minecraft:killed": {
+      "calamity:green_slime": 2,
+      "minecraft:wither": 1,
+      "calamity:blue_slime": 2,
+      "minecraft:ender_dragon": 3
+    },
+    "minecraft:used": {
+      "calamity:copper_boardsword": 5,
+      "calamity:crystal_crusher": 828,
+      "calamity:terraria_silver_ore": 3,
+      "calamity:terraria_wood": 1,
+      "calamity:anvil": 2,
+      "calamity:terraria_stone": 2,
+      "calamity:copper_axe": 1,
+      "calamity:copper_pickaxe": 30,
+      "calamity:ark_of_the_cosmos": 4,
+      "calamity:work_bench": 4,
+      "calamity:terraria_furnace": 3,
+      "minecraft:copper_boots": 1,
+      "calamity:terraria_hellstone": 16,
+      "calamity:terraria_lead_ore": 4
+    }
+  },
+  "DataVersion": 4790
+}

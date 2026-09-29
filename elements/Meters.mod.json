@@ -1,0 +1,49 @@
+{
+  "_fv": 89,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "adrenaline_meter.png",
+          "spritesCount": 50,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "ReturnPlayerAdrenaline"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 350,
+          "y": 185,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "rage_meter.png",
+          "spritesCount": 50,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "ReturnPlayerRage"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 355,
+          "y": 215,
+          "locked": false
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": "DisplayMeters",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

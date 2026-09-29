@@ -1,0 +1,34 @@
+{
+  "_fv": 89,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "flightbar.png",
+          "spritesCount": 22,
+          "displayCondition": "ReturnIfAppearFlightTicks",
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "ReturnFlightTicks"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 104,
+          "y": 204,
+          "locked": false
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

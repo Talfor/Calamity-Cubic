@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "calamity:block/sulphurous_sand_-28placed-29_png",
+    "particle": "calamity:block/sulphurous_sand_-28placed-29_png"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "has_precipitation": true,
+  "temperature": 1,
+  "downfall": 0.5,
+  "effects": {
+    "foliage_color": -16724992,
+    "grass_color": -16724992,
+    "water_color": -14783862
+  },
+  "attributes": {
+    "minecraft:visual/water_fog_color": -14783862
+  },
+  "spawners": {
+    "monster": [],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": [
+    "minecraft:cave",
+    "minecraft:cave_extra_underground",
+    "minecraft:canyon"
+  ],
+  "features": [
+    [],
+    [
+      "minecraft:lake_lava_underground"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "calamity:terraria_jungle_tree"
+    ],
+    []
+  ]
+}

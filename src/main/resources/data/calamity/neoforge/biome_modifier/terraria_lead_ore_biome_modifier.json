@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "calamity:underground",
+    "calamity:caverns"
+  ],
+  "features": "calamity:terraria_lead_ore",
+  "step": "underground_ores"
+}

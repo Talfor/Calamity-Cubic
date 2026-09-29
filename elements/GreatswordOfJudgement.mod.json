@@ -1,0 +1,43 @@
+{
+  "_fv": 89,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "greatsword_of_judgement",
+    "customModelName": "giant_item:greatsword_of_judgement",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "greatsword_of_judgement",
+    "name": "Greatsword Of Judgement",
+    "rarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      "CUSTOM:CalamityTab"
+    ],
+    "efficiency": 20.0,
+    "attackSpeed": 1.5999999999999999,
+    "enchantability": 22,
+    "damageVsEntity": 225.0,
+    "usageCount": 0,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "mainhand",
+        "attribute": "ENTITY_REACH",
+        "amount": 1.0,
+        "operation": "ADD_MULTIPLIED_TOTAL"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

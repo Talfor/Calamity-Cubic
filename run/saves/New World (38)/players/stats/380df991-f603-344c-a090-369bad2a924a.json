@@ -1,0 +1,77 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 29952,
+      "minecraft:walk_one_cm": 28364,
+      "minecraft:leave_game": 2,
+      "minecraft:walk_under_water_one_cm": 1726,
+      "minecraft:mob_kills": 2,
+      "minecraft:damage_taken": 320,
+      "minecraft:play_time": 17816,
+      "minecraft:damage_dealt": 390,
+      "minecraft:jump": 251,
+      "minecraft:time_since_death": 14950,
+      "minecraft:drop": 1,
+      "minecraft:sprint_one_cm": 24684,
+      "minecraft:fall_one_cm": 13933,
+      "minecraft:total_world_time": 18118,
+      "minecraft:fly_one_cm": 353769,
+      "minecraft:walk_on_water_one_cm": 351,
+      "minecraft:crouch_one_cm": 381,
+      "minecraft:sneak_time": 290,
+      "minecraft:deaths": 2
+    },
+    "minecraft:picked_up": {
+      "calamity:terraria_demonite_ore": 8,
+      "calamity:work_bench": 1,
+      "calamity:terraria_silver_ore": 3,
+      "calamity:terraria_lead_ore": 12,
+      "calamity:terraria_crimtane_ore": 7,
+      "calamity:terraria_dirt": 16,
+      "calamity:terraria_tin_ore": 8,
+      "calamity:terraria_gold_ore": 29,
+      "calamity:gel": 2,
+      "calamity:terraria_stone": 164,
+      "calamity:terraria_furnace": 2,
+      "calamity:coin_copper": 56,
+      "calamity:copper_axe": 51,
+      "calamity:terraria_wood": 255,
+      "calamity:terraria_copper_ore": 5
+    },
+    "minecraft:dropped": {
+      "calamity:work_bench": 1
+    },
+    "minecraft:used": {
+      "calamity:terraria_furnace": 3,
+      "calamity:crystal_crusher": 264,
+      "calamity:terraria_crimtane_ore": 7,
+      "calamity:terraria_demonite_ore": 8,
+      "calamity:anvil": 1,
+      "minecraft:torch": 1,
+      "calamity:terraria_stone": 6,
+      "calamity:copper_axe": 4,
+      "calamity:copper_pickaxe": 66,
+      "calamity:work_bench": 2
+    },
+    "minecraft:mined": {
+      "calamity:terraria_stone": 235,
+      "calamity:terraria_dirt": 13,
+      "calamity:terraria_silver_ore": 3,
+      "calamity:terraria_grass": 3,
+      "calamity:terraria_demonite_ore": 8,
+      "calamity:terraria_crimtane_ore": 8,
+      "calamity:terraria_gold_ore": 31,
+      "calamity:terraria_tin_ore": 8,
+      "calamity:terraria_copper_ore": 6,
+      "calamity:terraria_furnace": 2,
+      "calamity:terraria_lead_ore": 12,
+      "calamity:work_bench": 1,
+      "calamity:terraria_log": 4
+    },
+    "minecraft:killed": {
+      "calamity:green_slime": 1,
+      "calamity:blue_slime": 1
+    }
+  },
+  "DataVersion": 4790
+}

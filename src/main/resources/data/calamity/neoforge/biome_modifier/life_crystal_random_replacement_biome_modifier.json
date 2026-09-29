@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "calamity:underground",
+    "calamity:caverns",
+    "calamity:underground_desert"
+  ],
+  "features": "calamity:life_crystal_random_replacement",
+  "step": "underground_structures"
+}

@@ -1,0 +1,46 @@
+{
+  "stats": {
+    "minecraft:dropped": {
+      "calamity:copper_axe": 1,
+      "calamity:ark_of_the_cosmos": 1,
+      "calamity:copper_pickaxe": 1,
+      "calamity:greatsword_of_judgement": 1,
+      "calamity:copper_shortsword": 1
+    },
+    "minecraft:used": {
+      "minecraft:pillager_spawn_egg": 1,
+      "minecraft:warden_spawn_egg": 5,
+      "calamity:blue_slime_spawn_egg": 1,
+      "minecraft:ravager_spawn_egg": 1,
+      "calamity:ark_of_the_cosmos": 1
+    },
+    "minecraft:picked_up": {
+      "calamity:coin_copper": 25,
+      "calamity:greatsword_of_judgement": 3,
+      "calamity:ark_of_the_cosmos": 1,
+      "calamity:gel": 2
+    },
+    "minecraft:killed": {
+      "calamity:blue_slime": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 3762,
+      "minecraft:walk_one_cm": 1137,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 1,
+      "minecraft:walk_under_water_one_cm": 2189,
+      "minecraft:damage_dealt": 26490,
+      "minecraft:play_time": 3762,
+      "minecraft:jump": 24,
+      "minecraft:time_since_death": 3762,
+      "minecraft:drop": 5,
+      "minecraft:sprint_one_cm": 1378,
+      "minecraft:swim_one_cm": 597,
+      "minecraft:total_world_time": 3886,
+      "minecraft:fly_one_cm": 71676,
+      "minecraft:walk_on_water_one_cm": 439,
+      "minecraft:sneak_time": 78
+    }
+  },
+  "DataVersion": 4790
+}

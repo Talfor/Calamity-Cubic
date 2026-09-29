@@ -1,0 +1,48 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 7570,
+      "minecraft:walk_one_cm": 7717,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 2,
+      "minecraft:damage_taken": 60,
+      "minecraft:damage_dealt": 2317,
+      "minecraft:play_time": 7570,
+      "minecraft:jump": 90,
+      "minecraft:time_since_death": 7570,
+      "minecraft:drop": 1,
+      "minecraft:sprint_one_cm": 8437,
+      "minecraft:fall_one_cm": 4575,
+      "minecraft:total_world_time": 7821,
+      "minecraft:fly_one_cm": 227035,
+      "minecraft:sneak_time": 170
+    },
+    "minecraft:picked_up": {
+      "minecraft:dirt": 447,
+      "minecraft:oak_log": 2,
+      "minecraft:stick": 4,
+      "minecraft:cobblestone": 3,
+      "minecraft:oak_sapling": 2,
+      "minecraft:rotten_flesh": 2
+    },
+    "minecraft:dropped": {
+      "minecraft:rotten_flesh": 1
+    },
+    "minecraft:mined": {
+      "minecraft:dirt": 3,
+      "minecraft:grass_block": 1,
+      "minecraft:stone": 2
+    },
+    "minecraft:killed": {
+      "minecraft:husk": 2
+    },
+    "minecraft:used": {
+      "calamity:copper_shortsword": 69,
+      "calamity:copper_axe": 2,
+      "minecraft:dirt": 4,
+      "calamity:copper_pickaxe": 6,
+      "minecraft:cobblestone": 2
+    }
+  },
+  "DataVersion": 4790
+}

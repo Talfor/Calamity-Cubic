@@ -1,0 +1,12 @@
+{
+  "_fv": 89,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "Introduction",
+    "description": "§4Calamity Cubic's way of setting up selection GUIs. Setting this to true before loading a world will auto set the difficulty to §bClassic",
+    "category": "MISC",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 0
+  }
+}

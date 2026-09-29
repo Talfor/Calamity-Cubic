@@ -1,0 +1,71 @@
+{
+  "stats": {
+    "minecraft:mined": {
+      "calamity:terraria_stone": 314,
+      "calamity:terraria_copper_ore": 82,
+      "calamity:terraria_dirt": 15,
+      "calamity:terraria_grass": 2,
+      "calamity:terraria_sand": 76,
+      "calamity:terraria_log": 1
+    },
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:time_since_rest": 4480,
+      "minecraft:walk_one_cm": 32890,
+      "minecraft:leave_game": 1,
+      "minecraft:walk_under_water_one_cm": 3425,
+      "minecraft:mob_kills": 3,
+      "minecraft:damage_taken": 390,
+      "minecraft:play_time": 14043,
+      "minecraft:damage_dealt": 3525,
+      "minecraft:jump": 161,
+      "minecraft:time_since_death": 2208,
+      "minecraft:sprint_one_cm": 13220,
+      "minecraft:fall_one_cm": 9104,
+      "minecraft:total_world_time": 14117,
+      "minecraft:swim_one_cm": 1086,
+      "minecraft:fly_one_cm": 221857,
+      "minecraft:walk_on_water_one_cm": 1725,
+      "minecraft:crouch_one_cm": 1734,
+      "minecraft:sneak_time": 1472,
+      "minecraft:deaths": 2
+    },
+    "minecraft:used": {
+      "calamity:terraria_ice": 94,
+      "minecraft:netherite_sword": 13,
+      "minecraft:wither_spawn_egg": 1,
+      "calamity:terraria_stone": 56,
+      "calamity:copper_axe": 2,
+      "calamity:copper_pickaxe": 15,
+      "calamity:terraria_mud": 1,
+      "calamity:terraria_furnace": 1,
+      "minecraft:diamond_pickaxe": 474,
+      "minecraft:crafting_table": 1,
+      "calamity:terraria_snow": 1,
+      "calamity:terraria_sand": 62,
+      "calamity:terraria_dirt": 1,
+      "minecraft:torch": 2,
+      "minecraft:bow": 1
+    },
+    "minecraft:picked_up": {
+      "calamity:terraria_stone": 278,
+      "calamity:terraria_sand": 76,
+      "calamity:coin_copper": 123,
+      "minecraft:nether_star": 1,
+      "calamity:terraria_dirt": 27,
+      "calamity:terraria_wood": 11,
+      "calamity:terraria_copper_ore": 82,
+      "calamity:gel": 26
+    },
+    "minecraft:killed": {
+      "calamity:green_slime": 2,
+      "minecraft:wither": 1
+    },
+    "minecraft:crafted": {
+      "minecraft:torch": 3,
+      "minecraft:crafting_table": 1,
+      "calamity:terraria_furnace": 1
+    }
+  },
+  "DataVersion": 4790
+}

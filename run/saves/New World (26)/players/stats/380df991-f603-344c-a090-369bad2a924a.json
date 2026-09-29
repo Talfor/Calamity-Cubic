@@ -1,0 +1,31 @@
+{
+  "stats": {
+    "minecraft:mined": {
+      "calamity:terraria_grass": 1
+    },
+    "minecraft:used": {
+      "calamity:terraria_dirt": 1,
+      "calamity:copper_pickaxe": 1
+    },
+    "minecraft:picked_up": {
+      "calamity:terraria_dirt": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 1730,
+      "minecraft:walk_one_cm": 304,
+      "minecraft:leave_game": 1,
+      "minecraft:walk_under_water_one_cm": 2489,
+      "minecraft:damage_taken": 100,
+      "minecraft:play_time": 993,
+      "minecraft:jump": 2,
+      "minecraft:time_since_death": 837,
+      "minecraft:sprint_one_cm": 42,
+      "minecraft:total_world_time": 1222,
+      "minecraft:fly_one_cm": 93341,
+      "minecraft:walk_on_water_one_cm": 461,
+      "minecraft:sneak_time": 453,
+      "minecraft:deaths": 1
+    }
+  },
+  "DataVersion": 4790
+}

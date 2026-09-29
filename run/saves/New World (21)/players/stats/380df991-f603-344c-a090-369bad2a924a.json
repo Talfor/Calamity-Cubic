@@ -1,0 +1,91 @@
+{
+  "stats": {
+    "minecraft:dropped": {
+      "calamity:terraria_lead_ore": 3,
+      "calamity:blue_slime_spawn_egg": 37,
+      "calamity:terraria_tin_ore": 7,
+      "calamity:terraria_stone": 5,
+      "calamity:coin_silver": 1,
+      "calamity:terraria_iron_ore": 2
+    },
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:time_since_rest": 254,
+      "minecraft:walk_one_cm": 33246,
+      "minecraft:leave_game": 1,
+      "minecraft:walk_under_water_one_cm": 13,
+      "minecraft:mob_kills": 3,
+      "minecraft:damage_taken": 3130,
+      "minecraft:play_time": 16477,
+      "minecraft:damage_dealt": 650,
+      "minecraft:jump": 177,
+      "minecraft:time_since_death": 83,
+      "minecraft:drop": 19,
+      "minecraft:sprint_one_cm": 16717,
+      "minecraft:fall_one_cm": 38021,
+      "minecraft:total_world_time": 16841,
+      "minecraft:swim_one_cm": 272,
+      "minecraft:fly_one_cm": 310359,
+      "minecraft:walk_on_water_one_cm": 151,
+      "minecraft:crouch_one_cm": 1477,
+      "minecraft:sneak_time": 536,
+      "minecraft:deaths": 12
+    },
+    "minecraft:picked_up": {
+      "calamity:terraria_mud": 13,
+      "calamity:terraria_lead_ore": 27,
+      "calamity:blue_slime_spawn_egg": 37,
+      "calamity:terraria_dirt": 7,
+      "calamity:terraria_tin_ore": 69,
+      "calamity:terraria_sandstone": 134,
+      "calamity:gel": 26,
+      "calamity:terraria_stone": 273,
+      "calamity:terraria_furnace": 1,
+      "calamity:terraria_sand": 8,
+      "calamity:coin_copper": 230,
+      "calamity:terraria_iron_ore": 12,
+      "calamity:terraria_wood": 11,
+      "calamity:terraria_copper_ore": 2
+    },
+    "minecraft:killed": {
+      "calamity:green_slime": 1,
+      "calamity:blue_slime": 2
+    },
+    "minecraft:crafted": {
+      "minecraft:torch": 3,
+      "minecraft:crafting_table": 1,
+      "calamity:terraria_furnace": 1
+    },
+    "minecraft:used": {
+      "calamity:terraria_sandstone": 61,
+      "calamity:terraria_furnace": 2,
+      "calamity:crystal_crusher": 534,
+      "calamity:terraria_tin_ore": 8,
+      "minecraft:crafting_table": 1,
+      "calamity:green_slime_spawn_egg": 13,
+      "calamity:terraria_sand": 4,
+      "calamity:blue_slime_spawn_egg": 27,
+      "calamity:terraria_stone": 47,
+      "calamity:copper_axe": 1,
+      "calamity:copper_pickaxe": 16,
+      "calamity:terraria_lead_ore": 11
+    },
+    "minecraft:mined": {
+      "calamity:terraria_leaves": 2,
+      "calamity:terraria_stone": 285,
+      "calamity:terraria_tin_ore": 68,
+      "calamity:terraria_copper_ore": 3,
+      "calamity:terraria_furnace": 1,
+      "calamity:terraria_grass": 5,
+      "calamity:terraria_sandstone": 150,
+      "calamity:terraria_lead_ore": 13,
+      "calamity:terraria_sand": 8,
+      "calamity:terraria_iron_ore": 12,
+      "calamity:terraria_log": 1
+    },
+    "minecraft:killed_by": {
+      "calamity:blue_slime": 2
+    }
+  },
+  "DataVersion": 4790
+}

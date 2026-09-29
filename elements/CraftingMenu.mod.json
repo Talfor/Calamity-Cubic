@@ -1,0 +1,182 @@
+{
+  "_fv": 89,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "onTakenFromSlot": "RemoveCosts",
+          "x": 151,
+          "y": 55,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow_left",
+          "image": "arrow_left.png",
+          "hoveredImage": "arrow_left_selected.png",
+          "onClick": "MoveSelectionLeft",
+          "x": 137,
+          "y": 59,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow_right",
+          "image": "arrow_right.png",
+          "hoveredImage": "arrow_right_selected.png",
+          "onClick": "MoveSelectionRight",
+          "x": 281,
+          "y": 59,
+          "locked": false
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 169,
+          "y": 55,
+          "locked": false
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 187,
+          "y": 55,
+          "locked": false
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 205,
+          "y": 55,
+          "locked": false
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 4,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 223,
+          "y": 55,
+          "locked": false
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 5,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 241,
+          "y": 55,
+          "locked": false
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 6,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 259,
+          "y": 55,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "work_bench_png.png",
+          "spritesCount": 2,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "WorkbenchGet"
+          },
+          "x": 134,
+          "y": 103,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "furnace_item.png",
+          "spritesCount": 2,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "FurnaceGet"
+          },
+          "x": 152,
+          "y": 103,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "iron_anvil_png.png",
+          "spritesCount": 2,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "AnvilGet"
+          },
+          "x": 169,
+          "y": 103,
+          "locked": false
+        }
+      }
+    ],
+    "onOpen": "CraftingMenuThisGUIIsOpened",
+    "onTick": "CraftingMenuWhileThisGUIIsOpenTick",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

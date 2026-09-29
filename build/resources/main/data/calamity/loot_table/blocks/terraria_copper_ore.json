@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "calamity:blocks/terraria_copper_ore",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "calamity:terraria_copper_ore"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "calamity:terraria_furnace": 1,
+      "calamity:green_slime_spawn_egg": 1,
+      "calamity:copper_shortsword": 6,
+      "calamity:calamity_sulphurous_sand": 1,
+      "calamity:terraria_wood": 2,
+      "calamity:copper_axe": 3,
+      "minecraft:torch": 2,
+      "calamity:copper_pickaxe": 8
+    },
+    "minecraft:crafted": {
+      "minecraft:torch": 3,
+      "minecraft:crafting_table": 1
+    },
+    "minecraft:picked_up": {
+      "calamity:terraria_stone": 3,
+      "calamity:terraria_furnace": 1,
+      "calamity:coin_copper": 6,
+      "minecraft:torch": 1,
+      "calamity:terraria_wood": 32,
+      "calamity:terraria_copper_ore": 4,
+      "calamity:gel": 3
+    },
+    "minecraft:mined": {
+      "calamity:terraria_stone": 3,
+      "calamity:terraria_copper_ore": 4,
+      "calamity:terraria_furnace": 1,
+      "calamity:terraria_log": 3
+    },
+    "minecraft:dropped": {
+      "calamity:calamity_sulphurous_sand": 1
+    },
+    "minecraft:killed": {
+      "calamity:green_slime": 2
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 3238,
+      "minecraft:walk_one_cm": 10145,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 2,
+      "minecraft:walk_under_water_one_cm": 334,
+      "minecraft:damage_taken": 720,
+      "minecraft:damage_dealt": 280,
+      "minecraft:play_time": 6401,
+      "minecraft:jump": 73,
+      "minecraft:time_since_death": 1592,
+      "minecraft:drop": 1,
+      "minecraft:sprint_one_cm": 7390,
+      "minecraft:fall_one_cm": 7093,
+      "minecraft:total_world_time": 6491,
+      "minecraft:fly_one_cm": 187689,
+      "minecraft:walk_on_water_one_cm": 3987,
+      "minecraft:crouch_one_cm": 4,
+      "minecraft:sneak_time": 353,
+      "minecraft:deaths": 4
+    }
+  },
+  "DataVersion": 4790
+}

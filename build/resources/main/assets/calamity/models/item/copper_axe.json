@@ -1,0 +1,7 @@
+{
+  "parent": "calamity:custom/giant_item",
+  "textures": {
+    "0": "calamity:block/copper_axe",
+    "particle": "calamity:item/copper_axe"
+  }
+}

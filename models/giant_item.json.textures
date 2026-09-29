@@ -1,0 +1,58 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "0": ""
+      }
+    },
+    "greatsword_of_judgement": {
+      "name": "greatsword_of_judgement",
+      "map": {
+        "0": "greatsword_of_judgement"
+      }
+    },
+    "copper_broadsword": {
+      "name": "copper_broadsword",
+      "map": {
+        "0": "copper_broadsword"
+      }
+    },
+    "copper_shortsword": {
+      "name": "copper_shortsword",
+      "map": {
+        "0": "copper_shortsword"
+      }
+    },
+    "copper_pickaxe": {
+      "name": "copper_pickaxe",
+      "map": {
+        "0": "copper_pickaxe"
+      }
+    },
+    "copper_axe": {
+      "name": "copper_axe",
+      "map": {
+        "0": "copper_axe"
+      }
+    },
+    "crystal_crusher": {
+      "name": "crystal_crusher",
+      "map": {
+        "0": "crystyl_crusher_png"
+      }
+    },
+    "volcano": {
+      "name": "volcano",
+      "map": {
+        "0": "volcano_png"
+      }
+    },
+    "ark_of_the_cosmos": {
+      "name": "ark_of_the_cosmos",
+      "map": {
+        "0": "ark_of_the_cosmos_png"
+      }
+    }
+  }
+}

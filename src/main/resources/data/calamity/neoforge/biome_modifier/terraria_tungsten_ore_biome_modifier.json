@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "calamity:caverns",
+  "features": "calamity:terraria_tungsten_ore",
+  "step": "underground_ores"
+}

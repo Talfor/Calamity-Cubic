@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "calamity:terraria_leaves",
+    "calamity:terraria_copper_ore",
+    "calamity:terraria_log",
+    "calamity:calamity_sulphurous_sand",
+    "calamity:terraria_wood",
+    "calamity:terraria_dirt",
+    "calamity:terraria_stone",
+    "calamity:terraria_grass",
+    "calamity:terraria_sand"
+  ]
+}

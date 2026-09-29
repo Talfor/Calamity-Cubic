@@ -1,0 +1,10 @@
+{
+  "_fv": 89,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "Z",
+    "keyBindingName": "[Calamity] §bAdrenaline Ability",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": "InitAdrenalineOnKeyPressed"
+  }
+}

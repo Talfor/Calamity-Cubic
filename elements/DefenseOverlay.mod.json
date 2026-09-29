@@ -1,0 +1,128 @@
+{
+  "_fv": 89,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "defense_master_png.png",
+          "spritesCount": 3,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "ReturnDifficultySprite"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 0,
+          "y": 220,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "44",
+            "name": "ReturnDefenseAttribute"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 6,
+          "y": 226,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_441",
+          "text": {
+            "fixedValue": "44",
+            "name": "ReturnDefenseAttribute"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 6,
+          "y": 224,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_442",
+          "text": {
+            "fixedValue": "44",
+            "name": "ReturnDefenseAttribute"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 5,
+          "y": 225,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_443",
+          "text": {
+            "fixedValue": "44",
+            "name": "ReturnDefenseAttribute"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 7,
+          "y": 225,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_44",
+          "text": {
+            "fixedValue": "44",
+            "name": "ReturnDefenseAttribute"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 6,
+          "y": 225,
+          "locked": false
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Inventory",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "_fv": 89,
+  "_type": "feature",
+  "definition": {
+    "skipPlacement": false,
+    "generationStep": "UNDERGROUND_STRUCTURES",
+    "restrictionBiomes": [
+      "CUSTOM:Underground",
+      "CUSTOM:Caverns",
+      "CUSTOM:UndergroundDesert"
+    ],
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_random_patch\"><field name=\"tries\">128</field><field name=\"xzSpread\">7</field><field name=\"ySpread\">3</field><value name=\"feature\"><block type=\"feature_simple_block\"><field name=\"schedule_tick\">TRUE</field><value name=\"block\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\">CUSTOM:LifeCrystal</field></block></value></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">128</field><next><block type=\"placement_height_uniform\"><value name=\"min\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">120</field></block></value><value name=\"max\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">480</field></block></value></block></next></block></next></block></xml>"
+  }
+}

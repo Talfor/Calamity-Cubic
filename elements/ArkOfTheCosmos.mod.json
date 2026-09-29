@@ -1,0 +1,43 @@
+{
+  "_fv": 89,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "ark_of_the_cosmos_png",
+    "customModelName": "giant_item:ark_of_the_cosmos",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "ark_of_the_cosmos_png",
+    "name": "Ark of the Cosmos",
+    "rarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      "CUSTOM:CalamityTab"
+    ],
+    "efficiency": 20.0,
+    "attackSpeed": 2.8,
+    "enchantability": 22,
+    "damageVsEntity": 1700.0,
+    "usageCount": 0,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "mainhand",
+        "attribute": "ENTITY_REACH",
+        "amount": 1.5,
+        "operation": "ADD_MULTIPLIED_TOTAL"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

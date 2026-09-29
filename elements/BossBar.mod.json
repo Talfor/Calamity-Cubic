@@ -1,0 +1,83 @@
+{
+  "_fv": 89,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "boss_bar.png",
+          "spritesCount": 122,
+          "spriteIndex": {
+            "fixedValue": 70.0,
+            "name": "ReturnHealthPercentage"
+          },
+          "anchorPoint": "TOP_CENTER",
+          "x": 87,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "boss_bar_overline.png",
+          "use1Xscale": false,
+          "anchorPoint": "TOP_CENTER",
+          "x": 87,
+          "y": 11,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_535",
+          "text": {
+            "fixedValue": "57.8%   The Conceited, Devourer of Gods",
+            "name": "ReturnBossTitle"
+          },
+          "color": {
+            "value": -13312,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "anchorPoint": "TOP_CENTER",
+          "x": 87,
+          "y": 1,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_health_text",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHealthText"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "anchorPoint": "TOP_CENTER",
+          "x": 87,
+          "y": 22,
+          "locked": false
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": "IfLocalNull",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

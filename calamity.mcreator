@@ -1,0 +1,4279 @@
+{
+  "mod_elements": [
+    {
+      "name": "Meters",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meters",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/client/screens/MetersOverlay.java"
+        ]
+      },
+      "path": "~/X - Misc./Rage and Adrenaline"
+    },
+    {
+      "name": "BossBar",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boss_bar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/client/screens/BossBarOverlay.java"
+        ]
+      },
+      "path": "~/X - Misc./Boss Bar UI"
+    },
+    {
+      "name": "ReturnPlayerRage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_player_rage",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/ReturnPlayerRageProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Rage and Adrenaline"
+    },
+    {
+      "name": "ReturnPlayerAdrenaline",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_player_adrenaline",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/ReturnPlayerAdrenalineProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Rage and Adrenaline"
+    },
+    {
+      "name": "PlayerTickRA",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_tick_ra",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/PlayerTickRAProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Rage and Adrenaline"
+    },
+    {
+      "name": "InitRageOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "init_rage_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/InitRageOnKeyPressedProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Rage and Adrenaline"
+    },
+    {
+      "name": "InitRage",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "init_rage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/network/InitRageMessage.java"
+        ]
+      },
+      "path": "~/X - Misc./Rage and Adrenaline"
+    },
+    {
+      "name": "InitAdrenalineOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "init_adrenaline_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/InitAdrenalineOnKeyPressedProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Rage and Adrenaline"
+    },
+    {
+      "name": "InitAdrenaline",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "init_adrenaline",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/network/InitAdrenalineMessage.java"
+        ]
+      },
+      "path": "~/X - Misc./Rage and Adrenaline"
+    },
+    {
+      "name": "PlayerHurtsAdrLoss",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_hurts_adr_loss",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/PlayerHurtsAdrLossProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Rage and Adrenaline"
+    },
+    {
+      "name": "SetLocalBoss",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_local_boss",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/SetLocalBossProcedure.java"
+        ],
+        "return_type": "entity"
+      },
+      "path": "~/X - Misc./Boss Bar UI"
+    },
+    {
+      "name": "ReturnHealthPercentage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_health_percentage",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/ReturnHealthPercentageProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Boss Bar UI"
+    },
+    {
+      "name": "ReturnBossTitle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_boss_title",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/ReturnBossTitleProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Boss Bar UI"
+    },
+    {
+      "name": "IfLocalNull",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "if_local_null",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/IfLocalNullProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Boss Bar UI"
+    },
+    {
+      "name": "DifficultySelection",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "difficulty_selection",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/network/DifficultySelectionButtonMessage.java",
+          "src/main/java/net/mcreator/calamity/world/inventory/DifficultySelectionMenu.java",
+          "src/main/java/net/mcreator/calamity/client/gui/DifficultySelectionScreen.java"
+        ]
+      },
+      "path": "~/X - Misc./Difficulties"
+    },
+    {
+      "name": "IntroductionCompleted",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "introduction_completed",
+      "metadata": {
+        "type": "logic",
+        "files": []
+      },
+      "path": "~/X - Misc./Difficulties"
+    },
+    {
+      "name": "LoadWorld",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "load_world",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/LoadWorldProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Difficulties"
+    },
+    {
+      "name": "DifficultyCalamity",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "difficulty_calamity",
+      "metadata": {
+        "type": "number",
+        "files": []
+      },
+      "path": "~/X - Misc./Difficulties"
+    },
+    {
+      "name": "SelectDifficulty1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_difficulty_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/SelectDifficulty1Procedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Difficulties/Procedure - SelectDifficulty"
+    },
+    {
+      "name": "SelectDifficulty0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_difficulty_0",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/SelectDifficulty0Procedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Difficulties/Procedure - SelectDifficulty"
+    },
+    {
+      "name": "SelectDifficulty2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_difficulty_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/SelectDifficulty2Procedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Difficulties/Procedure - SelectDifficulty"
+    },
+    {
+      "name": "SelectDifficulty3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_difficulty_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/SelectDifficulty3Procedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Difficulties/Procedure - SelectDifficulty"
+    },
+    {
+      "name": "SelectDifficulty4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_difficulty_4",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/SelectDifficulty4Procedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Difficulties/Procedure - SelectDifficulty"
+    },
+    {
+      "name": "SelectDifficulty5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_difficulty_5",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/SelectDifficulty5Procedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Difficulties/Procedure - SelectDifficulty"
+    },
+    {
+      "name": "SelectDifficulty6",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_difficulty_6",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/SelectDifficulty6Procedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Difficulties/Procedure - SelectDifficulty"
+    },
+    {
+      "name": "DifficultyInventoryOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "difficulty_inventory_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/client/screens/DifficultyInventoryOverlayOverlay.java"
+        ]
+      },
+      "path": "~/X - Misc./Difficulties"
+    },
+    {
+      "name": "ReturnIfDifficulty0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_if_difficulty_0",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/ReturnIfDifficulty0Procedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Difficulties/Procedure - ReturnIfDifficulty"
+    },
+    {
+      "name": "ReturnIfDifficulty1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_if_difficulty_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/ReturnIfDifficulty1Procedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Difficulties/Procedure - ReturnIfDifficulty"
+    },
+    {
+      "name": "ReturnIfDifficulty2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_if_difficulty_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/ReturnIfDifficulty2Procedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Difficulties/Procedure - ReturnIfDifficulty"
+    },
+    {
+      "name": "ReturnIfDifficulty3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_if_difficulty_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/ReturnIfDifficulty3Procedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Difficulties/Procedure - ReturnIfDifficulty"
+    },
+    {
+      "name": "ReturnIfDifficulty4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_if_difficulty_4",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/ReturnIfDifficulty4Procedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Difficulties/Procedure - ReturnIfDifficulty"
+    },
+    {
+      "name": "ReturnIfDifficulty5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_if_difficulty_5",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/ReturnIfDifficulty5Procedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Difficulties/Procedure - ReturnIfDifficulty"
+    },
+    {
+      "name": "ReturnIfDifficulty6",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_if_difficulty_6",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/ReturnIfDifficulty6Procedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Difficulties/Procedure - ReturnIfDifficulty"
+    },
+    {
+      "name": "OpenDifficultySelection",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_difficulty_selection",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/OpenDifficultySelectionProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Difficulties"
+    },
+    {
+      "name": "CalamityDifficultyCommand",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calamity_difficulty_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/command/CalamityDifficultyCommandCommand.java"
+        ]
+      },
+      "path": "~/X - Misc./Difficulties"
+    },
+    {
+      "name": "ReturnHealthText",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_health_text",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/ReturnHealthTextProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Boss Bar UI"
+    },
+    {
+      "name": "Terraria",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "terraria",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/dimension/terraria.json",
+          "src/main/resources/data/calamity/dimension_type/terraria.json"
+        ]
+      },
+      "path": "~/Di - Dimension"
+    },
+    {
+      "name": "PlayerJoinsDimension",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_joins_dimension",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/PlayerJoinsDimensionProcedure.java"
+        ]
+      },
+      "path": "~/Di - Dimension"
+    },
+    {
+      "name": "DifficultyReturner",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "difficulty_returner",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/DifficultyReturnerProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Difficulties/Procedure - ReturnIfDifficulty"
+    },
+    {
+      "name": "AccessoryGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accessory_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/client/gui/AccessoryGUIScreen.java",
+          "src/main/java/net/mcreator/calamity/world/inventory/AccessoryGUIMenu.java"
+        ]
+      },
+      "path": "~/X - Misc./Accessories"
+    },
+    {
+      "name": "AccessoryKeyBindingOnKeyReleased",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accessory_key_binding_on_key_released",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/AccessoryKeyBindingOnKeyReleasedProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Accessories"
+    },
+    {
+      "name": "AccessoryKeyBinding",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accessory_key_binding",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/network/AccessoryKeyBindingMessage.java"
+        ]
+      },
+      "path": "~/X - Misc./Accessories"
+    },
+    {
+      "name": "PlayerJoins",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_joins",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/PlayerJoinsProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Misc. Plus"
+    },
+    {
+      "name": "DisplayMeters",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_meters",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/DisplayMetersProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Rage and Adrenaline"
+    },
+    {
+      "name": "TerrariaSurface",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "terraria_surface",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/worldgen/configured_feature/terraria_surface_tree.json",
+          "src/main/resources/data/calamity/worldgen/placed_feature/terraria_surface_tree.json",
+          "src/main/resources/data/calamity/worldgen/biome/terraria_surface.json"
+        ]
+      },
+      "path": "~/B - Biomes/500 - Surface"
+    },
+    {
+      "name": "CopperShortsword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_shortsword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/item/CopperShortswordItem.java",
+          "src/main/resources/assets/calamity/models/item/copper_shortsword.json",
+          "src/main/resources/assets/calamity/models/item/copper_shortsword_gui.json",
+          "src/main/resources/assets/calamity/items/copper_shortsword.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Tools"
+    },
+    {
+      "name": "TerrariaTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_tab",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/X - Misc./Misc. Plus"
+    },
+    {
+      "name": "GreatswordOfJudgement",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "greatsword_of_judgement",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/models/item/greatsword_of_judgement.json",
+          "src/main/resources/assets/calamity/items/greatsword_of_judgement.json",
+          "src/main/java/net/mcreator/calamity/item/GreatswordOfJudgementItem.java",
+          "src/main/resources/assets/calamity/models/item/greatsword_of_judgement_gui.json"
+        ]
+      },
+      "path": "~/3 - Post Moon-Lord"
+    },
+    {
+      "name": "CalamityTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calamity_tab",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/X - Misc./Misc. Plus"
+    },
+    {
+      "name": "CopperPickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/item/CopperPickaxeItem.java",
+          "src/main/resources/assets/calamity/models/item/copper_pickaxe.json",
+          "src/main/resources/assets/calamity/items/copper_pickaxe.json",
+          "src/main/resources/assets/calamity/models/item/copper_pickaxe_gui.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Tools"
+    },
+    {
+      "name": "CopperAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/item/CopperAxeItem.java",
+          "src/main/resources/assets/calamity/models/item/copper_axe_gui.json",
+          "src/main/resources/assets/calamity/items/copper_axe.json",
+          "src/main/resources/assets/calamity/models/item/copper_axe.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Tools"
+    },
+    {
+      "name": "HasJoinedWorld",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "has_joined_world",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/X - Misc./Misc. Plus"
+    },
+    {
+      "name": "TerrariaDirt",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_dirt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/block/TerrariaDirtBlock.java",
+          "src/main/resources/assets/calamity/models/item/terraria_dirt.json",
+          "src/main/resources/data/calamity/worldgen/configured_feature/terraria_dirt.json",
+          "src/main/resources/assets/calamity/blockstates/terraria_dirt.json",
+          "src/main/resources/assets/calamity/items/terraria_dirt.json",
+          "src/main/resources/data/calamity/neoforge/biome_modifier/terraria_dirt_biome_modifier.json",
+          "src/main/resources/data/calamity/worldgen/placed_feature/terraria_dirt.json",
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_dirt.json",
+          "src/main/resources/assets/calamity/models/block/terraria_dirt.json"
+        ]
+      },
+      "path": "~/Bl - Blocks"
+    },
+    {
+      "name": "TerrariaStone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_stone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/block/TerrariaStoneBlock.java",
+          "src/main/resources/assets/calamity/items/terraria_stone.json",
+          "src/main/resources/assets/calamity/models/block/terraria_stone.json",
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_stone.json",
+          "src/main/resources/assets/calamity/blockstates/terraria_stone.json",
+          "src/main/resources/assets/calamity/models/item/terraria_stone.json"
+        ]
+      },
+      "path": "~/Bl - Blocks"
+    },
+    {
+      "name": "TerrariaGrass",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_grass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_grass.json",
+          "src/main/resources/assets/calamity/models/block/terraria_grass.json",
+          "src/main/java/net/mcreator/calamity/block/TerrariaGrassBlock.java",
+          "src/main/resources/assets/calamity/blockstates/terraria_grass.json"
+        ]
+      },
+      "path": "~/Bl - Blocks/Non Item Blocks"
+    },
+    {
+      "name": "ForcePlayerMining",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "force_player_mining",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/ForcePlayerMiningProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Misc. Plus"
+    },
+    {
+      "name": "TerrariaWood",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/items/terraria_wood.json",
+          "src/main/java/net/mcreator/calamity/block/TerrariaWoodBlock.java",
+          "src/main/resources/assets/calamity/blockstates/terraria_wood.json",
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_wood.json",
+          "src/main/resources/assets/calamity/models/item/terraria_wood.json",
+          "src/main/resources/assets/calamity/models/block/terraria_wood.json"
+        ]
+      },
+      "path": "~/Bl - Blocks"
+    },
+    {
+      "name": "TerrariaLeaves",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_leaves.json",
+          "src/main/java/net/mcreator/calamity/block/TerrariaLeavesBlock.java",
+          "src/main/resources/assets/calamity/models/block/terraria_leaves.json",
+          "src/main/resources/assets/calamity/blockstates/terraria_leaves.json"
+        ]
+      },
+      "path": "~/Bl - Blocks/Non Item Blocks"
+    },
+    {
+      "name": "TerrariaLog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_log.json",
+          "src/main/resources/assets/calamity/blockstates/terraria_log.json",
+          "src/main/resources/assets/calamity/models/block/terraria_log.json",
+          "src/main/java/net/mcreator/calamity/block/TerrariaLogBlock.java"
+        ]
+      },
+      "path": "~/Bl - Blocks/Non Item Blocks"
+    },
+    {
+      "name": "TerrariaLogBlockDestroyed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_log_block_destroyed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/TerrariaLogBlockDestroyedProcedure.java"
+        ]
+      },
+      "path": "~/Bl - Blocks/Procedures"
+    },
+    {
+      "name": "Gel",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/item/GelItem.java",
+          "src/main/resources/assets/calamity/models/item/gel.json",
+          "src/main/resources/assets/calamity/items/gel.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Items"
+    },
+    {
+      "name": "BlueSlimeDrops",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_slime_drops",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/loot_table/entities/blue_slime.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Loot Tables"
+    },
+    {
+      "name": "CoinCopper",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coin_copper",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/item/CoinCopperItem.java",
+          "src/main/resources/assets/calamity/models/item/coin_copper.json",
+          "src/main/resources/assets/calamity/items/coin_copper.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Items"
+    },
+    {
+      "name": "CoinSilver",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coin_silver",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/items/coin_silver.json",
+          "src/main/java/net/mcreator/calamity/item/CoinSilverItem.java",
+          "src/main/resources/assets/calamity/models/item/coin_silver.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Items"
+    },
+    {
+      "name": "CoinGold",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coin_gold",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/item/CoinGoldItem.java",
+          "src/main/resources/assets/calamity/models/item/coin_gold.json",
+          "src/main/resources/assets/calamity/items/coin_gold.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Items"
+    },
+    {
+      "name": "CoinPlatinum",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coin_platinum",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/models/item/coin_platinum.json",
+          "src/main/java/net/mcreator/calamity/item/CoinPlatinumItem.java",
+          "src/main/resources/assets/calamity/items/coin_platinum.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Items"
+    },
+    {
+      "name": "PlayerCoinProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_coin_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/PlayerCoinProcedureProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Misc. Plus"
+    },
+    {
+      "name": "PlayerFoodTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_food_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/PlayerFoodTickProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Misc. Plus"
+    },
+    {
+      "name": "TerrariaSand",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_sand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/models/block/terraria_sand.json",
+          "src/main/resources/assets/calamity/items/terraria_sand.json",
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_sand.json",
+          "src/main/resources/assets/calamity/blockstates/terraria_sand.json",
+          "src/main/java/net/mcreator/calamity/block/TerrariaSandBlock.java",
+          "src/main/resources/assets/calamity/models/item/terraria_sand.json"
+        ]
+      },
+      "path": "~/Bl - Blocks"
+    },
+    {
+      "name": "TerrariaBeach",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_beach",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/worldgen/configured_feature/terraria_beach_tree.json",
+          "src/main/resources/data/calamity/worldgen/placed_feature/terraria_beach_tree.json",
+          "src/main/resources/data/calamity/worldgen/biome/terraria_beach.json"
+        ]
+      },
+      "path": "~/B - Biomes/500 - Surface"
+    },
+    {
+      "name": "TerrariaOcean",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_ocean",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/worldgen/biome/terraria_ocean.json"
+        ]
+      },
+      "path": "~/B - Biomes/500 - Surface"
+    },
+    {
+      "name": "CalamitySulphurousSea",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calamity_sulphurous_sea",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/worldgen/biome/calamity_sulphurous_sea.json"
+        ]
+      },
+      "path": "~/B - Biomes/500 - Surface"
+    },
+    {
+      "name": "CalamitySulphurousSand",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calamity_sulphurous_sand",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/loot_table/blocks/calamity_sulphurous_sand.json",
+          "src/main/resources/assets/calamity/models/block/calamity_sulphurous_sand.json",
+          "src/main/resources/assets/calamity/blockstates/calamity_sulphurous_sand.json",
+          "src/main/java/net/mcreator/calamity/block/CalamitySulphurousSandBlock.java",
+          "src/main/resources/assets/calamity/items/calamity_sulphurous_sand.json",
+          "src/main/resources/assets/calamity/models/item/calamity_sulphurous_sand.json"
+        ]
+      },
+      "path": "~/Bl - Blocks"
+    },
+    {
+      "name": "TerrariaCopperOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "terraria_copper_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/items/terraria_copper_ore.json",
+          "src/main/resources/assets/calamity/models/block/terraria_copper_ore.json",
+          "src/main/resources/data/calamity/neoforge/biome_modifier/terraria_copper_ore_biome_modifier.json",
+          "src/main/resources/assets/calamity/models/item/terraria_copper_ore.json",
+          "src/main/resources/data/calamity/worldgen/configured_feature/terraria_copper_ore.json",
+          "src/main/resources/assets/calamity/blockstates/terraria_copper_ore.json",
+          "src/main/java/net/mcreator/calamity/block/TerrariaCopperOreBlock.java",
+          "src/main/resources/data/calamity/worldgen/placed_feature/terraria_copper_ore.json",
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_copper_ore.json"
+        ]
+      },
+      "path": "~/Bl - Blocks/Ores"
+    },
+    {
+      "name": "TerrariaCopperIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_copper_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/models/item/terraria_copper_ingot.json",
+          "src/main/resources/assets/calamity/items/terraria_copper_ingot.json",
+          "src/main/java/net/mcreator/calamity/item/TerrariaCopperIngotItem.java"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Items"
+    },
+    {
+      "name": "GreenSlimeDrops",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_slime_drops",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/loot_table/entities/green_slime.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Loot Tables"
+    },
+    {
+      "name": "CopperBoardsword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_boardsword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/models/item/copper_boardsword.json",
+          "src/main/resources/assets/calamity/items/copper_boardsword.json",
+          "src/main/java/net/mcreator/calamity/item/CopperBoardswordItem.java",
+          "src/main/resources/assets/calamity/models/item/copper_boardsword_gui.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Tools"
+    },
+    {
+      "name": "Underground",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "underground",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/worldgen/biome/underground.json"
+        ]
+      },
+      "path": "~/B - Biomes/350 - Underground"
+    },
+    {
+      "name": "TerrariaIce",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_ice",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/blockstates/terraria_ice.json",
+          "src/main/resources/assets/calamity/models/item/terraria_ice.json",
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_ice.json",
+          "src/main/resources/assets/calamity/items/terraria_ice.json",
+          "src/main/resources/assets/calamity/models/block/terraria_ice.json",
+          "src/main/java/net/mcreator/calamity/block/TerrariaIceBlock.java"
+        ]
+      },
+      "path": "~/Bl - Blocks"
+    },
+    {
+      "name": "DaytimeSpawningCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "daytime_spawning_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/DaytimeSpawningConditionProcedure.java"
+        ]
+      },
+      "path": "~/Sn - Spawning Logic"
+    },
+    {
+      "name": "TerrariaSnow",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_snow",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/models/item/terraria_snow.json",
+          "src/main/resources/assets/calamity/blockstates/terraria_snow.json",
+          "src/main/resources/assets/calamity/models/block/terraria_snow.json",
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_snow.json",
+          "src/main/java/net/mcreator/calamity/block/TerrariaSnowBlock.java",
+          "src/main/resources/assets/calamity/items/terraria_snow.json"
+        ]
+      },
+      "path": "~/Bl - Blocks"
+    },
+    {
+      "name": "TerrariaTundra",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_tundra",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/worldgen/biome/terraria_tundra.json",
+          "src/main/resources/data/calamity/worldgen/configured_feature/terraria_tundra_tree.json",
+          "src/main/resources/data/calamity/worldgen/placed_feature/terraria_tundra_tree.json"
+        ]
+      },
+      "path": "~/B - Biomes/500 - Surface"
+    },
+    {
+      "name": "TerrariaDesert",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_desert",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/worldgen/biome/terraria_desert.json",
+          "src/main/resources/data/calamity/worldgen/placed_feature/terraria_desert_tree.json",
+          "src/main/resources/data/calamity/worldgen/configured_feature/terraria_desert_tree.json"
+        ]
+      },
+      "path": "~/B - Biomes/500 - Surface"
+    },
+    {
+      "name": "TerrariaMud",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_mud",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_mud.json",
+          "src/main/resources/assets/calamity/models/item/terraria_mud.json",
+          "src/main/resources/assets/calamity/items/terraria_mud.json",
+          "src/main/resources/assets/calamity/blockstates/terraria_mud.json",
+          "src/main/java/net/mcreator/calamity/block/TerrariaMudBlock.java",
+          "src/main/resources/assets/calamity/models/block/terraria_mud.json"
+        ]
+      },
+      "path": "~/Bl - Blocks"
+    },
+    {
+      "name": "TerrariaJungle",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_jungle",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/worldgen/placed_feature/terraria_jungle_tree.json",
+          "src/main/resources/data/calamity/worldgen/biome/terraria_jungle.json",
+          "src/main/resources/data/calamity/worldgen/configured_feature/terraria_jungle_tree.json"
+        ]
+      },
+      "path": "~/B - Biomes/500 - Surface"
+    },
+    {
+      "name": "TerrariaJungleGrass",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_jungle_grass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_jungle_grass.json",
+          "src/main/java/net/mcreator/calamity/block/TerrariaJungleGrassBlock.java",
+          "src/main/resources/assets/calamity/blockstates/terraria_jungle_grass.json",
+          "src/main/resources/assets/calamity/models/block/terraria_jungle_grass.json"
+        ]
+      },
+      "path": "~/Bl - Blocks/Non Item Blocks"
+    },
+    {
+      "name": "TerrariaSandstone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_sandstone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/block/TerrariaSandstoneBlock.java",
+          "src/main/resources/assets/calamity/blockstates/terraria_sandstone.json",
+          "src/main/resources/assets/calamity/items/terraria_sandstone.json",
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_sandstone.json",
+          "src/main/resources/assets/calamity/models/item/terraria_sandstone.json",
+          "src/main/resources/assets/calamity/models/block/terraria_sandstone.json"
+        ]
+      },
+      "path": "~/Bl - Blocks"
+    },
+    {
+      "name": "TerrariaHardenedStone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_hardened_stone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/block/TerrariaHardenedStoneBlock.java",
+          "src/main/resources/assets/calamity/models/item/terraria_hardened_stone.json",
+          "src/main/resources/assets/calamity/items/terraria_hardened_stone.json",
+          "src/main/resources/assets/calamity/blockstates/terraria_hardened_stone.json",
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_hardened_stone.json",
+          "src/main/resources/assets/calamity/models/block/terraria_hardened_stone.json"
+        ]
+      },
+      "path": "~/Bl - Blocks"
+    },
+    {
+      "name": "UndergroundDesert",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "underground_desert",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/worldgen/biome/underground_desert.json"
+        ]
+      },
+      "path": "~/B - Biomes/350 - Underground"
+    },
+    {
+      "name": "TerrariaTinOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "terraria_tin_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/models/item/terraria_tin_ore.json",
+          "src/main/resources/assets/calamity/items/terraria_tin_ore.json",
+          "src/main/resources/assets/calamity/models/block/terraria_tin_ore.json",
+          "src/main/resources/assets/calamity/blockstates/terraria_tin_ore.json",
+          "src/main/resources/data/calamity/worldgen/placed_feature/terraria_tin_ore.json",
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_tin_ore.json",
+          "src/main/java/net/mcreator/calamity/block/TerrariaTinOreBlock.java",
+          "src/main/resources/data/calamity/neoforge/biome_modifier/terraria_tin_ore_biome_modifier.json",
+          "src/main/resources/data/calamity/worldgen/configured_feature/terraria_tin_ore.json"
+        ]
+      },
+      "path": "~/Bl - Blocks/Ores"
+    },
+    {
+      "name": "TerrariaIronOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "terraria_iron_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/worldgen/placed_feature/terraria_iron_ore.json",
+          "src/main/resources/assets/calamity/models/item/terraria_iron_ore.json",
+          "src/main/resources/assets/calamity/blockstates/terraria_iron_ore.json",
+          "src/main/java/net/mcreator/calamity/block/TerrariaIronOreBlock.java",
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_iron_ore.json",
+          "src/main/resources/assets/calamity/models/block/terraria_iron_ore.json",
+          "src/main/resources/assets/calamity/items/terraria_iron_ore.json",
+          "src/main/resources/data/calamity/worldgen/configured_feature/terraria_iron_ore.json",
+          "src/main/resources/data/calamity/neoforge/biome_modifier/terraria_iron_ore_biome_modifier.json"
+        ]
+      },
+      "path": "~/Bl - Blocks/Ores"
+    },
+    {
+      "name": "TerrariaLeadOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "terraria_lead_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/items/terraria_lead_ore.json",
+          "src/main/resources/assets/calamity/models/block/terraria_lead_ore.json",
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_lead_ore.json",
+          "src/main/resources/data/calamity/worldgen/placed_feature/terraria_lead_ore.json",
+          "src/main/resources/data/calamity/neoforge/biome_modifier/terraria_lead_ore_biome_modifier.json",
+          "src/main/resources/assets/calamity/blockstates/terraria_lead_ore.json",
+          "src/main/java/net/mcreator/calamity/block/TerrariaLeadOreBlock.java",
+          "src/main/resources/data/calamity/worldgen/configured_feature/terraria_lead_ore.json",
+          "src/main/resources/assets/calamity/models/item/terraria_lead_ore.json"
+        ]
+      },
+      "path": "~/Bl - Blocks/Ores"
+    },
+    {
+      "name": "CrystalCrusher",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_crusher",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/models/item/crystal_crusher_gui.json",
+          "src/main/resources/assets/calamity/items/crystal_crusher.json",
+          "src/main/resources/assets/calamity/models/item/crystal_crusher.json",
+          "src/main/java/net/mcreator/calamity/item/CrystalCrusherItem.java"
+        ]
+      },
+      "path": "~/3 - Post Moon-Lord"
+    },
+    {
+      "name": "Hell",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hell",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/worldgen/biome/hell.json"
+        ]
+      },
+      "path": "~/B - Biomes/0 - Hell"
+    },
+    {
+      "name": "Caverns",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caverns",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/worldgen/biome/caverns.json"
+        ]
+      },
+      "path": "~/B - Biomes/100 - Caverns"
+    },
+    {
+      "name": "DevRockLivingEntityIsHitWithItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_rock_living_entity_is_hit_with_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/DevRockLivingEntityIsHitWithItemProcedure.java"
+        ]
+      },
+      "path": "~/3 - Post Moon-Lord"
+    },
+    {
+      "name": "DevRock",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_rock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/items/dev_rock.json",
+          "src/main/resources/assets/calamity/models/item/dev_rock.json",
+          "src/main/java/net/mcreator/calamity/item/DevRockItem.java"
+        ]
+      },
+      "path": "~/3 - Post Moon-Lord"
+    },
+    {
+      "name": "TerrariaSilverOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "terraria_silver_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/models/item/terraria_silver_ore.json",
+          "src/main/resources/data/calamity/worldgen/configured_feature/terraria_silver_ore.json",
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_silver_ore.json",
+          "src/main/resources/assets/calamity/blockstates/terraria_silver_ore.json",
+          "src/main/java/net/mcreator/calamity/block/TerrariaSilverOreBlock.java",
+          "src/main/resources/assets/calamity/items/terraria_silver_ore.json",
+          "src/main/resources/data/calamity/neoforge/biome_modifier/terraria_silver_ore_biome_modifier.json",
+          "src/main/resources/assets/calamity/models/block/terraria_silver_ore.json",
+          "src/main/resources/data/calamity/worldgen/placed_feature/terraria_silver_ore.json"
+        ]
+      },
+      "path": "~/Bl - Blocks/Ores"
+    },
+    {
+      "name": "TerrariaTungstenOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "terraria_tungsten_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/models/item/terraria_tungsten_ore.json",
+          "src/main/resources/assets/calamity/models/block/terraria_tungsten_ore.json",
+          "src/main/resources/assets/calamity/blockstates/terraria_tungsten_ore.json",
+          "src/main/resources/data/calamity/neoforge/biome_modifier/terraria_tungsten_ore_biome_modifier.json",
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_tungsten_ore.json",
+          "src/main/java/net/mcreator/calamity/block/TerrariaTungstenOreBlock.java",
+          "src/main/resources/data/calamity/worldgen/configured_feature/terraria_tungsten_ore.json",
+          "src/main/resources/data/calamity/worldgen/placed_feature/terraria_tungsten_ore.json",
+          "src/main/resources/assets/calamity/items/terraria_tungsten_ore.json"
+        ]
+      },
+      "path": "~/Bl - Blocks/Ores"
+    },
+    {
+      "name": "TerrariaGoldOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "terraria_gold_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/models/item/terraria_gold_ore.json",
+          "src/main/resources/assets/calamity/blockstates/terraria_gold_ore.json",
+          "src/main/resources/data/calamity/worldgen/placed_feature/terraria_gold_ore.json",
+          "src/main/resources/data/calamity/neoforge/biome_modifier/terraria_gold_ore_biome_modifier.json",
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_gold_ore.json",
+          "src/main/resources/assets/calamity/items/terraria_gold_ore.json",
+          "src/main/resources/assets/calamity/models/block/terraria_gold_ore.json",
+          "src/main/java/net/mcreator/calamity/block/TerrariaGoldOreBlock.java",
+          "src/main/resources/data/calamity/worldgen/configured_feature/terraria_gold_ore.json"
+        ]
+      },
+      "path": "~/Bl - Blocks/Ores"
+    },
+    {
+      "name": "TerrariaPlatinumOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "terraria_platinum_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/neoforge/biome_modifier/terraria_platinum_ore_biome_modifier.json",
+          "src/main/resources/data/calamity/worldgen/placed_feature/terraria_platinum_ore.json",
+          "src/main/resources/assets/calamity/items/terraria_platinum_ore.json",
+          "src/main/resources/data/calamity/worldgen/configured_feature/terraria_platinum_ore.json",
+          "src/main/java/net/mcreator/calamity/block/TerrariaPlatinumOreBlock.java",
+          "src/main/resources/assets/calamity/models/item/terraria_platinum_ore.json",
+          "src/main/resources/assets/calamity/models/block/terraria_platinum_ore.json",
+          "src/main/resources/assets/calamity/blockstates/terraria_platinum_ore.json",
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_platinum_ore.json"
+        ]
+      },
+      "path": "~/Bl - Blocks/Ores"
+    },
+    {
+      "name": "TerrariaHellstone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "terraria_hellstone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/models/block/terraria_hellstone.json",
+          "src/main/resources/data/calamity/worldgen/configured_feature/terraria_hellstone.json",
+          "src/main/resources/data/calamity/neoforge/biome_modifier/terraria_hellstone_biome_modifier.json",
+          "src/main/java/net/mcreator/calamity/block/TerrariaHellstoneBlock.java",
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_hellstone.json",
+          "src/main/resources/data/calamity/worldgen/placed_feature/terraria_hellstone.json",
+          "src/main/resources/assets/calamity/models/item/terraria_hellstone.json",
+          "src/main/resources/assets/calamity/items/terraria_hellstone.json",
+          "src/main/resources/assets/calamity/blockstates/terraria_hellstone.json"
+        ]
+      },
+      "path": "~/Bl - Blocks/Ores"
+    },
+    {
+      "name": "TerrariaCrimtaneOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "terraria_crimtane_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/items/terraria_crimtane_ore.json",
+          "src/main/resources/data/calamity/worldgen/placed_feature/terraria_crimtane_ore.json",
+          "src/main/resources/data/calamity/neoforge/biome_modifier/terraria_crimtane_ore_biome_modifier.json",
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_crimtane_ore.json",
+          "src/main/resources/assets/calamity/blockstates/terraria_crimtane_ore.json",
+          "src/main/java/net/mcreator/calamity/block/TerrariaCrimtaneOreBlock.java",
+          "src/main/resources/assets/calamity/models/block/terraria_crimtane_ore.json",
+          "src/main/resources/assets/calamity/models/item/terraria_crimtane_ore.json",
+          "src/main/resources/data/calamity/worldgen/configured_feature/terraria_crimtane_ore.json"
+        ]
+      },
+      "path": "~/Bl - Blocks/Ores"
+    },
+    {
+      "name": "TerrariaDemoniteOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "terraria_demonite_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/blockstates/terraria_demonite_ore.json",
+          "src/main/resources/assets/calamity/models/item/terraria_demonite_ore.json",
+          "src/main/resources/data/calamity/worldgen/configured_feature/terraria_demonite_ore.json",
+          "src/main/resources/data/calamity/worldgen/placed_feature/terraria_demonite_ore.json",
+          "src/main/resources/assets/calamity/models/block/terraria_demonite_ore.json",
+          "src/main/java/net/mcreator/calamity/block/TerrariaDemoniteOreBlock.java",
+          "src/main/resources/data/calamity/neoforge/biome_modifier/terraria_demonite_ore_biome_modifier.json",
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_demonite_ore.json",
+          "src/main/resources/assets/calamity/items/terraria_demonite_ore.json"
+        ]
+      },
+      "path": "~/Bl - Blocks/Ores"
+    },
+    {
+      "name": "TerrariaTinIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_tin_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/models/item/terraria_tin_ingot.json",
+          "src/main/resources/assets/calamity/items/terraria_tin_ingot.json",
+          "src/main/java/net/mcreator/calamity/item/TerrariaTinIngotItem.java"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Items"
+    },
+    {
+      "name": "TerrariaSilverIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_silver_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/item/TerrariaSilverIngotItem.java",
+          "src/main/resources/assets/calamity/models/item/terraria_silver_ingot.json",
+          "src/main/resources/assets/calamity/items/terraria_silver_ingot.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Items"
+    },
+    {
+      "name": "TerrariaTungstenIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_tungsten_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/models/item/terraria_tungsten_ingot.json",
+          "src/main/java/net/mcreator/calamity/item/TerrariaTungstenIngotItem.java",
+          "src/main/resources/assets/calamity/items/terraria_tungsten_ingot.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Items"
+    },
+    {
+      "name": "TerrariaIronIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_iron_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/item/TerrariaIronIngotItem.java",
+          "src/main/resources/assets/calamity/items/terraria_iron_ingot.json",
+          "src/main/resources/assets/calamity/models/item/terraria_iron_ingot.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Items"
+    },
+    {
+      "name": "TerrariaLeadIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_lead_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/items/terraria_lead_ingot.json",
+          "src/main/java/net/mcreator/calamity/item/TerrariaLeadIngotItem.java",
+          "src/main/resources/assets/calamity/models/item/terraria_lead_ingot.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Items"
+    },
+    {
+      "name": "TerrariaGoldIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_gold_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/models/item/terraria_gold_ingot.json",
+          "src/main/java/net/mcreator/calamity/item/TerrariaGoldIngotItem.java",
+          "src/main/resources/assets/calamity/items/terraria_gold_ingot.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Items"
+    },
+    {
+      "name": "TerrariaPlatinumIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_platinum_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/models/item/terraria_platinum_ingot.json",
+          "src/main/java/net/mcreator/calamity/item/TerrariaPlatinumIngotItem.java",
+          "src/main/resources/assets/calamity/items/terraria_platinum_ingot.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Items"
+    },
+    {
+      "name": "TerrariaDemoniteIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_demonite_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/models/item/terraria_demonite_ingot.json",
+          "src/main/java/net/mcreator/calamity/item/TerrariaDemoniteIngotItem.java",
+          "src/main/resources/assets/calamity/items/terraria_demonite_ingot.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Items"
+    },
+    {
+      "name": "TerrariaCrimtaneIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_crimtane_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/item/TerrariaCrimtaneIngotItem.java",
+          "src/main/resources/assets/calamity/models/item/terraria_crimtane_ingot.json",
+          "src/main/resources/assets/calamity/items/terraria_crimtane_ingot.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Items"
+    },
+    {
+      "name": "TerrariaHellstoneBar",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_hellstone_bar",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/models/item/terraria_hellstone_bar.json",
+          "src/main/java/net/mcreator/calamity/item/TerrariaHellstoneBarItem.java",
+          "src/main/resources/assets/calamity/items/terraria_hellstone_bar.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Items"
+    },
+    {
+      "name": "Volcano",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "volcano",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/item/VolcanoItem.java",
+          "src/main/resources/assets/calamity/models/item/volcano_gui.json",
+          "src/main/resources/assets/calamity/models/item/volcano.json",
+          "src/main/resources/assets/calamity/items/volcano.json"
+        ]
+      },
+      "path": "~/2 - Hardmode"
+    },
+    {
+      "name": "CraftingMenu",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crafting_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/network/CraftingMenuSlotMessage.java",
+          "src/main/java/net/mcreator/calamity/client/gui/CraftingMenuScreen.java",
+          "src/main/java/net/mcreator/calamity/network/CraftingMenuButtonMessage.java",
+          "src/main/java/net/mcreator/calamity/world/inventory/CraftingMenuMenu.java"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Block"
+    },
+    {
+      "name": "WorkBench",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "work_bench",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/loot_table/blocks/work_bench.json",
+          "src/main/resources/assets/calamity/models/block/work_bench.json",
+          "src/main/resources/assets/calamity/models/item/work_bench.json",
+          "src/main/resources/assets/calamity/blockstates/work_bench.json",
+          "src/main/resources/assets/calamity/items/work_bench.json",
+          "src/main/java/net/mcreator/calamity/block/WorkBenchBlock.java"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Block"
+    },
+    {
+      "name": "CraftingMenuThisGUIIsOpened",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crafting_menu_this_gui_is_opened",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/CraftingMenuThisGUIIsOpenedProcedure.java"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Block/Extra Procedures"
+    },
+    {
+      "name": "GetSlotReturn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_slot_return",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "ID",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "itemstack",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/GetSlotReturnProcedure.java"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Recipes"
+    },
+    {
+      "name": "CraftingMenuWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crafting_menu_while_this_gui_is_open_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/CraftingMenuWhileThisGUIIsOpenTickProcedure.java"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Block/Extra Procedures"
+    },
+    {
+      "name": "GetItemNumber",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_item_number",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sentItem",
+            "type": "itemstack"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/GetItemNumberProcedure.java"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Block/Extra Procedures"
+    },
+    {
+      "name": "OpenCraftingMenuOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_crafting_menu_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/OpenCraftingMenuOnKeyPressedProcedure.java"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Block/Extra Procedures"
+    },
+    {
+      "name": "OpenCraftingMenu",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_crafting_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/network/OpenCraftingMenuMessage.java"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Block"
+    },
+    {
+      "name": "RemoveCosts",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_costs",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "slot",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/RemoveCostsProcedure.java"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Recipes"
+    },
+    {
+      "name": "MoveSelectionLeft",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "move_selection_left",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/MoveSelectionLeftProcedure.java"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Block/Extra Procedures"
+    },
+    {
+      "name": "MoveSelectionRight",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "move_selection_right",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/MoveSelectionRightProcedure.java"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Block/Extra Procedures"
+    },
+    {
+      "name": "GetNearbyStation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_nearby_station",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sentBlock",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/GetNearbyStationProcedure.java"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Block/Extra Procedures"
+    },
+    {
+      "name": "Anvil",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anvil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/block/AnvilBlock.java",
+          "src/main/resources/assets/calamity/models/item/anvil.json",
+          "src/main/resources/data/calamity/loot_table/blocks/anvil.json",
+          "src/main/resources/assets/calamity/items/anvil.json",
+          "src/main/resources/assets/calamity/blockstates/anvil.json",
+          "src/main/resources/assets/calamity/models/block/anvil.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Block"
+    },
+    {
+      "name": "TerrariaFurnace",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_furnace",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/block/TerrariaFurnaceBlock.java",
+          "src/main/resources/assets/calamity/blockstates/terraria_furnace.json",
+          "src/main/resources/assets/calamity/models/block/terraria_furnace.json",
+          "src/main/resources/assets/calamity/models/item/terraria_furnace.json",
+          "src/main/resources/assets/calamity/items/terraria_furnace.json",
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_furnace.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Block"
+    },
+    {
+      "name": "WorkbenchGet",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "workbench_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/WorkbenchGetProcedure.java"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Block/Nearby Stations"
+    },
+    {
+      "name": "AnvilGet",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anvil_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/AnvilGetProcedure.java"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Block/Nearby Stations"
+    },
+    {
+      "name": "FurnaceGet",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furnace_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/FurnaceGetProcedure.java"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Block/Nearby Stations"
+    },
+    {
+      "name": "PlayerMaintainInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_maintain_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/PlayerMaintainInventoryTickProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Misc. Plus"
+    },
+    {
+      "name": "Config",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "config",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/client/gui/ConfigScreen.java",
+          "src/main/java/net/mcreator/calamity/world/inventory/ConfigMenu.java",
+          "src/main/java/net/mcreator/calamity/network/ConfigButtonMessage.java"
+        ]
+      },
+      "path": "~/X - Misc./Difficulties"
+    },
+    {
+      "name": "ReturnDifficultyContent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_difficulty_content",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/ReturnDifficultyContentProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Difficulties"
+    },
+    {
+      "name": "TheAbyss",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_abyss",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/worldgen/biome/the_abyss.json"
+        ]
+      },
+      "path": "~/B - Biomes/X - Special"
+    },
+    {
+      "name": "TerrariaClay",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_clay",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_clay.json",
+          "src/main/resources/assets/calamity/items/terraria_clay.json",
+          "src/main/java/net/mcreator/calamity/block/TerrariaClayBlock.java",
+          "src/main/resources/assets/calamity/blockstates/terraria_clay.json",
+          "src/main/resources/assets/calamity/models/block/terraria_clay.json",
+          "src/main/resources/assets/calamity/models/item/terraria_clay.json"
+        ]
+      },
+      "path": "~/Bl - Blocks"
+    },
+    {
+      "name": "TerrariaAsh",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terraria_ash",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/block/TerrariaAshBlock.java",
+          "src/main/resources/assets/calamity/models/item/terraria_ash.json",
+          "src/main/resources/assets/calamity/items/terraria_ash.json",
+          "src/main/resources/assets/calamity/blockstates/terraria_ash.json",
+          "src/main/resources/assets/calamity/models/block/terraria_ash.json",
+          "src/main/resources/data/calamity/loot_table/blocks/terraria_ash.json"
+        ]
+      },
+      "path": "~/Bl - Blocks"
+    },
+    {
+      "name": "ArkOfTheCosmos",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ark_of_the_cosmos",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/models/item/ark_of_the_cosmos.json",
+          "src/main/java/net/mcreator/calamity/item/ArkOfTheCosmosItem.java",
+          "src/main/resources/assets/calamity/items/ark_of_the_cosmos.json",
+          "src/main/resources/assets/calamity/models/item/ark_of_the_cosmos_gui.json"
+        ]
+      },
+      "path": "~/3 - Post Moon-Lord"
+    },
+    {
+      "name": "LifeCrystal",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life_crystal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/block/LifeCrystalBlock.java",
+          "src/main/resources/assets/calamity/blockstates/life_crystal.json",
+          "src/main/resources/data/calamity/loot_table/blocks/life_crystal.json",
+          "src/main/resources/assets/calamity/models/block/life_crystal.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Items"
+    },
+    {
+      "name": "LifeCrystalItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life_crystal_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/items/life_crystal_item.json",
+          "src/main/java/net/mcreator/calamity/item/LifeCrystalItemItem.java",
+          "src/main/resources/assets/calamity/models/item/life_crystal_item.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Items"
+    },
+    {
+      "name": "LifeCrystalItemRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life_crystal_item_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/LifeCrystalItemRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Items"
+    },
+    {
+      "name": "LifeCrystalRandomReplacement",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life_crystal_random_replacement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/calamity/worldgen/configured_feature/life_crystal_random_replacement.json",
+          "src/main/resources/data/calamity/neoforge/biome_modifier/life_crystal_random_replacement_biome_modifier.json",
+          "src/main/resources/data/calamity/worldgen/placed_feature/life_crystal_random_replacement.json"
+        ]
+      },
+      "path": "~/1 - Pre-Hardmode/Items"
+    },
+    {
+      "name": "CriticalStrikeChance",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "critical_strike_chance",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/X - Misc./Misc. Plus"
+    },
+    {
+      "name": "CriticalHitMath",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "critical_hit_math",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/CriticalHitMathProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Misc. Plus"
+    },
+    {
+      "name": "LifeRegen",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life_regen",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/X - Misc./Misc. Plus"
+    },
+    {
+      "name": "PlayerRegenTIck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_regen_t_ick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/PlayerRegenTIckProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Misc. Plus"
+    },
+    {
+      "name": "DefenseTerraria",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "defense_terraria",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/X - Misc./Misc. Plus"
+    },
+    {
+      "name": "PlayerTakesDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_takes_damage",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/PlayerTakesDamageProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Misc. Plus"
+    },
+    {
+      "name": "DefenseOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "defense_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/client/screens/DefenseOverlayOverlay.java"
+        ]
+      },
+      "path": "~/X - Misc./Misc. Plus"
+    },
+    {
+      "name": "ReturnDifficultySprite",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_difficulty_sprite",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/ReturnDifficultySpriteProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Misc. Plus"
+    },
+    {
+      "name": "ReturnDefenseAttribute",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_defense_attribute",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/ReturnDefenseAttributeProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Misc. Plus"
+    },
+    {
+      "name": "FlightTicks",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flight_ticks",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/X - Misc./Flight"
+    },
+    {
+      "name": "MaxFlightTicks",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_flight_ticks",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/X - Misc./Flight"
+    },
+    {
+      "name": "ReturnFlightTicks",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_flight_ticks",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/ReturnFlightTicksProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Flight"
+    },
+    {
+      "name": "ReturnIfAppearFlightTicks",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_if_appear_flight_ticks",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/ReturnIfAppearFlightTicksProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Flight"
+    },
+    {
+      "name": "FlightBarOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flight_bar_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/client/screens/FlightBarOverlayOverlay.java"
+        ]
+      },
+      "path": "~/X - Misc./Flight"
+    },
+    {
+      "name": "AccessorySlotCount",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accessory_slot_count",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/X - Misc./Accessories"
+    },
+    {
+      "name": "GetIfAccessoryExists",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_if_accessory_exists",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sentItem",
+            "type": "itemstack"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/GetIfAccessoryExistsProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Accessories"
+    },
+    {
+      "name": "AccessoryGUIOpenTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accessory_gui_open_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/AccessoryGUIOpenTickProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Accessories"
+    },
+    {
+      "name": "WindsFledgling",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "winds_fledgling",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/models/item/winds_fledgling.json",
+          "src/main/java/net/mcreator/calamity/item/WindsFledglingItem.java",
+          "src/main/resources/assets/calamity/items/winds_fledgling.json"
+        ]
+      },
+      "path": "~/X - Misc./Accessories"
+    },
+    {
+      "name": "SetFlight",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_flight",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/SetFlightProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Flight"
+    },
+    {
+      "name": "FlyButton",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/network/FlyButtonMessage.java"
+        ]
+      },
+      "path": "~/X - Misc./Flight"
+    },
+    {
+      "name": "FlyButtonTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly_button_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/FlyButtonTickProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Flight"
+    },
+    {
+      "name": "AccessoryGUIThisGUIIsOpened",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accessory_gui_this_gui_is_opened",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/AccessoryGUIThisGUIIsOpenedProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Accessories"
+    },
+    {
+      "name": "ButtonFlightPress",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "button_flight_press",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/ButtonFlightPressProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Flight"
+    },
+    {
+      "name": "ButtonFlightRelease",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "button_flight_release",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/ButtonFlightReleaseProcedure.java"
+        ]
+      },
+      "path": "~/X - Misc./Flight"
+    },
+    {
+      "name": "HorizontalBoost",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "horizontal_boost",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/X - Misc./Flight"
+    },
+    {
+      "name": "VerticalBoost",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vertical_boost",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/X - Misc./Flight"
+    },
+    {
+      "name": "WingsofRebirth",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wingsof_rebirth",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/items/wingsof_rebirth.json",
+          "src/main/java/net/mcreator/calamity/item/WingsofRebirthItem.java",
+          "src/main/resources/assets/calamity/models/item/wingsof_rebirth.json"
+        ]
+      },
+      "path": "~/X - Misc./Accessories"
+    },
+    {
+      "name": "SlimeAI",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slime_ai",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/items/slime_ai_spawn_egg.json",
+          "src/main/java/net/mcreator/calamity/entity/SlimeAIEntity.java",
+          "src/main/java/net/mcreator/calamity/client/renderer/SlimeAIRenderer.java",
+          "src/main/resources/assets/calamity/models/item/slime_ai_spawn_egg.json"
+        ]
+      },
+      "path": "~/Ai - Templates"
+    },
+    {
+      "name": "DemonEyeAI",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demon_eye_ai",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/models/item/demon_eye_ai_spawn_egg.json",
+          "src/main/java/net/mcreator/calamity/entity/DemonEyeAIEntity.java",
+          "src/main/java/net/mcreator/calamity/client/renderer/DemonEyeAIRenderer.java",
+          "src/main/resources/assets/calamity/items/demon_eye_ai_spawn_egg.json"
+        ]
+      },
+      "path": "~/Ai - Templates"
+    },
+    {
+      "name": "NighttimeSpawningCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nighttime_spawning_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/NighttimeSpawningConditionProcedure.java"
+        ]
+      },
+      "path": "~/Sn - Spawning Logic"
+    },
+    {
+      "name": "UndergroundSpawningCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "underground_spawning_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/UndergroundSpawningConditionProcedure.java"
+        ]
+      },
+      "path": "~/Sn - Spawning Logic"
+    },
+    {
+      "name": "CavernSpawningCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cavern_spawning_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/CavernSpawningConditionProcedure.java"
+        ]
+      },
+      "path": "~/Sn - Spawning Logic"
+    },
+    {
+      "name": "WormHeadAI",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "worm_head_ai",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/calamity/models/item/worm_head_ai_spawn_egg.json",
+          "src/main/java/net/mcreator/calamity/client/renderer/WormHeadAIRenderer.java",
+          "src/main/java/net/mcreator/calamity/entity/WormHeadAIEntity.java",
+          "src/main/resources/assets/calamity/items/worm_head_ai_spawn_egg.json"
+        ]
+      },
+      "path": "~/Ai - Templates"
+    },
+    {
+      "name": "EnemyCharge",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enemy_charge",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "target",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/EnemyChargeProcedure.java"
+        ]
+      },
+      "path": "~/Ai - Templates"
+    },
+    {
+      "name": "WormHeadAITick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "worm_head_ai_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/WormHeadAITickProcedure.java"
+        ]
+      },
+      "path": "~/Ai - Templates"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "rage",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "adrenaline",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "rageactive",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "adrenalineactive",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "difficultyreturner",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "heighttemp",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "heightcontinue",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "true"
+    },
+    {
+      "name": "craftingstation_offset",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "craftingstation_temp",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "accessoryslot_1",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "accessoryslot_2",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "accessoryslot_3",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "accessoryslot_4",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "accessoryslot_5",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "accessoryslot_6",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "accessoryslot_7",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "accessoryslot_8",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "accessoryslot_9",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "flybuttonactive",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "rage_activate",
+      "files": [
+        "rageactivate"
+      ],
+      "category": "player",
+      "subtitle": "Rage Activates"
+    },
+    {
+      "name": "rage_full",
+      "files": [
+        "fullrage"
+      ],
+      "category": "player",
+      "subtitle": "Rage Charges"
+    },
+    {
+      "name": "rage_end",
+      "files": [
+        "rageend"
+      ],
+      "category": "player",
+      "subtitle": "Rage Ends"
+    },
+    {
+      "name": "adrenaline_activate",
+      "files": [
+        "adrenalineactivate"
+      ],
+      "category": "player",
+      "subtitle": "Adrenaline Activates"
+    },
+    {
+      "name": "adrenaline_loss",
+      "files": [
+        "adrenalineloss"
+      ],
+      "category": "player",
+      "subtitle": "Adrenaline Fails"
+    },
+    {
+      "name": "adrenaline_full",
+      "files": [
+        "fulladrenaline"
+      ],
+      "category": "player",
+      "subtitle": "Adrenaline Charges"
+    },
+    {
+      "name": "difficultyset_expert",
+      "files": [
+        "expertmode"
+      ],
+      "category": "master",
+      "subtitle": "§5Expert Mode"
+    },
+    {
+      "name": "difficultyset_revengeance",
+      "files": [
+        "revengeancemode"
+      ],
+      "category": "master",
+      "subtitle": "§4Revengeance Mode"
+    },
+    {
+      "name": "difficultyset_master",
+      "files": [
+        "mastermode"
+      ],
+      "category": "master",
+      "subtitle": "§mMaster Mode"
+    },
+    {
+      "name": "difficultyset_death",
+      "files": [
+        "deathmode"
+      ],
+      "category": "master",
+      "subtitle": "§cDeath Mode"
+    },
+    {
+      "name": "difficultyset_legendary",
+      "files": [
+        "legendarymode"
+      ],
+      "category": "master",
+      "subtitle": "§eLegendary Mode"
+    },
+    {
+      "name": "difficultyset_malice",
+      "files": [
+        "malicemode"
+      ],
+      "category": "master",
+      "subtitle": "§dMalice Mode"
+    }
+  ],
+  "tag_elements": {
+    "ENTITIES:mod:bosses": [
+      "EntityWither",
+      "EntityDragon"
+    ],
+    "BLOCKS:mod:terrariastone_orereplacement": [
+      "CUSTOM:TerrariaStone"
+    ],
+    "BLOCKS:minecraft:animals_spawnable_on": [
+      "CUSTOM:TerrariaDirt",
+      "CUSTOM:TerrariaStone",
+      "CUSTOM:TerrariaGrass",
+      "CUSTOM:TerrariaWood",
+      "CUSTOM:TerrariaLeaves",
+      "CUSTOM:TerrariaLog",
+      "CUSTOM:TerrariaSand",
+      "CUSTOM:CalamitySulphurousSand",
+      "CUSTOM:TerrariaCopperOre"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Terraria@CUSTOM:TerrariaSand",
+      "~Terraria@CUSTOM:TerrariaSnow",
+      "~Terraria@CUSTOM:TerrariaMud",
+      "~Terraria@CUSTOM:TerrariaGrass",
+      "~Terraria@CUSTOM:TerrariaDirt",
+      "~Terraria@CUSTOM:TerrariaJungleGrass",
+      "~Terraria@CUSTOM:TerrariaSandstone"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~LifeCrystal@CUSTOM:LifeCrystal",
+      "~TerrariaAsh@CUSTOM:TerrariaAsh",
+      "~TerrariaClay@CUSTOM:TerrariaClay",
+      "~TerrariaFurnace@CUSTOM:TerrariaFurnace",
+      "~Anvil@CUSTOM:Anvil",
+      "~WorkBench@CUSTOM:WorkBench",
+      "~TerrariaHardenedStone@CUSTOM:TerrariaHardenedStone",
+      "~TerrariaSandstone@CUSTOM:TerrariaSandstone",
+      "~TerrariaJungleGrass@CUSTOM:TerrariaJungleGrass",
+      "~TerrariaMud@CUSTOM:TerrariaMud",
+      "~TerrariaSnow@CUSTOM:TerrariaSnow",
+      "~TerrariaIce@CUSTOM:TerrariaIce",
+      "~CalamitySulphurousSand@CUSTOM:CalamitySulphurousSand",
+      "~TerrariaSand@CUSTOM:TerrariaSand",
+      "~TerrariaLeaves@CUSTOM:TerrariaLeaves",
+      "~TerrariaWood@CUSTOM:TerrariaWood",
+      "~TerrariaGrass@CUSTOM:TerrariaGrass",
+      "~TerrariaStone@CUSTOM:TerrariaStone",
+      "~TerrariaDirt@CUSTOM:TerrariaDirt",
+      "~TerrariaDemoniteOre@CUSTOM:TerrariaDemoniteOre",
+      "~TerrariaCrimtaneOre@CUSTOM:TerrariaCrimtaneOre",
+      "~TerrariaHellstone@CUSTOM:TerrariaHellstone",
+      "~TerrariaPlatinumOre@CUSTOM:TerrariaPlatinumOre",
+      "~TerrariaGoldOre@CUSTOM:TerrariaGoldOre",
+      "~TerrariaTungstenOre@CUSTOM:TerrariaTungstenOre",
+      "~TerrariaSilverOre@CUSTOM:TerrariaSilverOre",
+      "~TerrariaLeadOre@CUSTOM:TerrariaLeadOre",
+      "~TerrariaIronOre@CUSTOM:TerrariaIronOre",
+      "~TerrariaTinOre@CUSTOM:TerrariaTinOre",
+      "~TerrariaCopperOre@CUSTOM:TerrariaCopperOre"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~TerrariaHellstone@CUSTOM:TerrariaHellstone"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~TerrariaDemoniteOre@CUSTOM:TerrariaDemoniteOre",
+      "~TerrariaCrimtaneOre@CUSTOM:TerrariaCrimtaneOre"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CrystalCrusher@CUSTOM:CrystalCrusher",
+      "~CopperPickaxe@CUSTOM:CopperPickaxe",
+      "~CopperShortsword@CUSTOM:CopperShortsword"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~ArkOfTheCosmos@CUSTOM:ArkOfTheCosmos",
+      "~Volcano@CUSTOM:Volcano",
+      "~CopperBoardsword@CUSTOM:CopperBoardsword",
+      "~GreatswordOfJudgement@CUSTOM:GreatswordOfJudgement"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CopperAxe@CUSTOM:CopperAxe"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~TerrariaLog@CUSTOM:TerrariaLog"
+    ]
+  },
+  "tab_element_order": {
+    "CUSTOM:TerrariaTab": [
+      "CoinCopper",
+      "CoinSilver",
+      "CoinGold",
+      "CoinPlatinum",
+      "CopperShortsword",
+      "CopperBoardsword",
+      "CopperPickaxe",
+      "CopperAxe",
+      "Volcano",
+      "WorkBench",
+      "Anvil",
+      "TerrariaFurnace",
+      "TerrariaDirt",
+      "TerrariaStone",
+      "TerrariaSand",
+      "CalamitySulphurousSand",
+      "TerrariaIce",
+      "TerrariaSnow",
+      "TerrariaMud",
+      "TerrariaClay",
+      "TerrariaAsh",
+      "TerrariaSandstone",
+      "TerrariaHardenedStone",
+      "TerrariaWood",
+      "TerrariaCopperOre",
+      "TerrariaCopperIngot",
+      "TerrariaTinOre",
+      "TerrariaTinIngot",
+      "TerrariaIronOre",
+      "TerrariaIronIngot",
+      "TerrariaLeadOre",
+      "TerrariaLeadIngot",
+      "TerrariaSilverOre",
+      "TerrariaSilverIngot",
+      "TerrariaTungstenOre",
+      "TerrariaTungstenIngot",
+      "TerrariaGoldOre",
+      "TerrariaGoldIngot",
+      "TerrariaPlatinumOre",
+      "TerrariaPlatinumIngot",
+      "TerrariaCrimtaneOre",
+      "TerrariaCrimtaneIngot",
+      "TerrariaDemoniteOre",
+      "TerrariaDemoniteIngot",
+      "TerrariaHellstone",
+      "TerrariaHellstoneBar",
+      "Gel",
+      "LifeCrystalItem",
+      "WindsFledgling",
+      "WingsofRebirth",
+      "SlimeAI",
+      "TerrariaGrass",
+      "TerrariaLeaves",
+      "TerrariaLog",
+      "TerrariaJungleGrass",
+      "LifeCrystal",
+      "DemonEyeAI",
+      "WormHeadAI"
+    ],
+    "CUSTOM:CalamityTab": [
+      "GreatswordOfJudgement",
+      "ArkOfTheCosmos",
+      "CrystalCrusher"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "gui.calamity.meters.label_535": "57.8%   The Conceited, Devourer of Gods",
+      "gui.calamity.boss_bar.label_535": "57.8%   The Conceited, Devourer of Gods",
+      "key.calamity.init_rage": "[Calamity] §6Rage Ability",
+      "subtitles.rage_activate": "Rage Activates",
+      "subtitles.rage_full": "Rage Charges",
+      "subtitles.rage_end": "Rage Ends",
+      "subtitles.adrenaline_activate": "Adrenaline Activates",
+      "subtitles.adrenaline_loss": "Adrenaline Fails",
+      "subtitles.adrenaline_full": "Adrenaline Charges",
+      "key.calamity.init_adrenaline": "[Calamity] §bAdrenaline Ability",
+      "subtitles.difficultyset_expert": "§5Expert Mode",
+      "subtitles.difficultyset_revengeance": "§4Revengeance Mode",
+      "subtitles.difficultyset_master": "§mMaster Mode",
+      "subtitles.difficultyset_death": "§cDeath Mode",
+      "subtitles.difficultyset_legendary": "§eLegendary Mode",
+      "subtitles.difficultyset_malice": "§dMalice Mode",
+      "gui.calamity.difficulty_selection.tooltip_ss4master_ssf_ss7greatly_increased": "§4Master §f: §7Greatly increased damage \u0026 health, tougher mechanics, and exclusive vanity rewards.",
+      "gui.calamity.difficulty_selection.tooltip_ss5expert_ssf_ss7unique_attack_pat": "§5Expert §f: §7Unique attack patterns, increased health, and exclusive loot.",
+      "gui.calamity.difficulty_selection.tooltip_ssbclassic_ssf_ss7the_vanilla_expe": "§bClassic §f: §7The vanilla experience. No modifiers.",
+      "gui.calamity.difficulty_selection.tooltip_ssddeath_ssf_ss7master_aggressiv": "§dDeath §f: §7Master + Aggressive AIs, §6Rage §7\u0026 §9Adrenaline§7, and lethal mechanics.",
+      "gui.calamity.difficulty_selection.tooltip_ss6legendary_ssf_ss7master_furth": "§6Legendary §f: §7Master + Further increased health \u0026 damage, impossibly hard mechanics.",
+      "gui.calamity.difficulty_selection.tooltip_ssjmalice_ssf_ss7death_legendary": "§8Malice §f: §7Death \u0026 Legendary mechanics merged into pure suffering. §8Only for the Worthy.",
+      "gui.calamity.difficulty_selection.tooltip_sscrevengeance_ssf_ss7expert_new": "§cRevengeance §f: §7Expert + New AI Mechanics \u0026 §6Rage §7\u0026 §9Adrenaline§7.",
+      "gamerule.calamity.introduction_completed": "Introduction",
+      "gamerule.calamity.introduction_completed.description": "§4Calamity Cubic\u0027s way of setting up selection GUIs. Setting this to true before loading a world will auto set the difficulty to §bClassic",
+      "gamerule.calamity.difficulty_calamity.description": "§4How Calamity Cubic determines difficulty. 0: Classic, 1: Expert, 2: Revengeance, 3: Master, 4: Death, 5: Legendary, 6: Malice",
+      "gamerule.calamity.difficulty_calamity": "Difficulty",
+      "key.calamity.accessory_key_binding": "Accessory Key",
+      "biome.calamity.terraria_surface": "Terraria Surface",
+      "item.calamity.copper_shortsword": "Copper Shortsword",
+      "item_group.calamity.terraria_tab": "Terraria",
+      "item.calamity.greatsword_of_judgement": "Greatsword Of Judgement",
+      "item_group.calamity.calamity_tab": "Calamity",
+      "item.calamity.copper_pickaxe": "Copper Pickaxe",
+      "item.calamity.copper_axe": "Copper Axe",
+      "attribute.calamity.has_joined_world": "Has Joined World",
+      "item.calamity.terraria_dirt": "Dirt",
+      "item.calamity.terraria_stone": "Stone",
+      "item.calamity.terraria_grass": "Grass",
+      "item.calamity.terraria_wood": "Wood",
+      "item.calamity.terraria_leaves": "Leaves",
+      "item.calamity.terraria_log": "Log",
+      "item.calamity.gel": "Gel",
+      "item.calamity.coin_copper": "Copper Coin",
+      "item.calamity.coin_silver": "Silver Coin",
+      "item.calamity.coin_gold": "Gold Coin",
+      "item.calamity.coin_platinum": "Platinum Coin",
+      "item.calamity.terraria_sand": "Sand",
+      "biome.calamity.terraria_beach": "Terraria Beach",
+      "biome.calamity.terraria_ocean": "Terraria Ocean",
+      "biome.calamity.calamity_sulphurous_sea": "Sulphurous Sea",
+      "item.calamity.calamity_sulphurous_sand": "Sulphurous Sand",
+      "item.calamity.terraria_copper_ore": "Copper Ore",
+      "item.calamity.terraria_copper_ingot": "Copper Bar",
+      "item.calamity.copper_boardsword": "Copper Boardsword",
+      "biome.calamity.underground": "Underground",
+      "item.calamity.terraria_ice": "Ice",
+      "item.calamity.terraria_snow": "Snow",
+      "biome.calamity.terraria_tundra": "Terraria Tundra",
+      "biome.calamity.terraria_desert": "Terraria Desert",
+      "item.calamity.terraria_mud": "Mud",
+      "biome.calamity.terraria_jungle": "Terraria Jungle",
+      "item.calamity.terraria_jungle_grass": "Jungle Grass",
+      "item.calamity.terraria_sandstone": "Sandstone",
+      "item.calamity.terraria_hardened_stone": "Hardened Sand",
+      "biome.calamity.underground_desert": "Underground Desert",
+      "item.calamity.terraria_tin_ore": "Tin Ore",
+      "item.calamity.terraria_iron_ore": "Iron Ore",
+      "item.calamity.terraria_lead_ore": "Lead Ore",
+      "item.calamity.crystal_crusher": "Crystal Crusher",
+      "biome.calamity.hell": "Hell",
+      "biome.calamity.caverns": "Caverns",
+      "item.calamity.dev_rock": "Rock",
+      "item.calamity.dev_rock.description_1": "§5Dev Item",
+      "item.calamity.dev_rock.description_0": "§4Deletes any entity hit.",
+      "item.calamity.terraria_silver_ore": "Silver Ore",
+      "item.calamity.terraria_tungsten_ore": "Tungsten Ore",
+      "item.calamity.terraria_gold_ore": "Gold Ore",
+      "item.calamity.terraria_platinum_ore": "Platinum Ore",
+      "item.calamity.terraria_hellstone": "Hellstone",
+      "item.calamity.terraria_crimtane_ore": "Crimtane Ore",
+      "item.calamity.terraria_demonite_ore": "Demonite Ore",
+      "item.calamity.terraria_tin_ingot": "Tin Bar",
+      "item.calamity.terraria_silver_ingot": "Silver Bar",
+      "item.calamity.terraria_tungsten_ingot": "Tungsten Bar",
+      "item.calamity.terraria_iron_ingot": "Iron Bar",
+      "item.calamity.terraria_lead_ingot": "Lead Bar",
+      "item.calamity.terraria_gold_ingot": "Gold Bar",
+      "item.calamity.terraria_platinum_ingot": "Platinum Bar",
+      "item.calamity.terraria_demonite_ingot": "Demonite Bar",
+      "item.calamity.terraria_crimtane_ingot": "Crimtane Bar",
+      "item.calamity.terraria_hellstone_bar": "Hellstone Bar",
+      "item.calamity.volcano": "Volcano",
+      "gui.calamity.crafting_menu.tooltip_empty": "",
+      "gui.calamity.crafting_menu.tooltip_empty1": "",
+      "gui.calamity.crafting_menu.tooltip_empty2": "",
+      "gui.calamity.crafting_menu.tooltip_empty3": "",
+      "gui.calamity.crafting_menu.tooltip_empty4": "",
+      "gui.calamity.crafting_menu.tooltip_empty5": "",
+      "gui.calamity.crafting_menu.tooltip_cost_x8_wood_x999_dragon_eggs": "Cost: x8 Wood, x999 Dragon Eggs",
+      "item.calamity.work_bench": "Work Bench",
+      "key.calamity.open_crafting_menu": "Open Crafting Menu",
+      "gui.calamity.crafting_menu.tooltip_empty11": "empty-1",
+      "item.calamity.anvil": "Anvil",
+      "item.calamity.terraria_furnace": "Furnace",
+      "gui.calamity.config.tooltip_ss6legendary_ssf_ss7master_furth": "§6Legendary §f: §7Master + Further increased health \u0026 damage, impossibly hard mechanics.",
+      "gui.calamity.config.tooltip_ss5expert_ssf_ss7unique_attack_pat": "§5Expert §f: §7Unique attack patterns, increased health, and exclusive loot.",
+      "gui.calamity.config.tooltip_ss4master_ssf_ss7greatly_increased": "§4Master §f: §7Greatly increased damage \u0026 health, tougher mechanics, and exclusive vanity rewards.",
+      "gui.calamity.config.tooltip_ssjmalice_ssf_ss7death_legendary": "§8Malice §f: §7Death \u0026 Legendary mechanics merged into pure suffering. §8Only for the Worthy.",
+      "gui.calamity.config.tooltip_ssbclassic_ssf_ss7the_vanilla_expe": "§bClassic §f: §7The vanilla experience. No modifiers.",
+      "gui.calamity.config.tooltip_sscrevengeance_ssf_ss7expert_new": "§cRevengeance §f: §7Expert + New AI Mechanics \u0026 §6Rage §7\u0026 §9Adrenaline§7.",
+      "gui.calamity.config.tooltip_ssddeath_ssf_ss7master_aggressiv": "§dDeath §f: §7Master + Aggressive AIs, §6Rage §7\u0026 §9Adrenaline§7, and lethal mechanics.",
+      "gui.calamity.config.calamitybool": "Calamity Content",
+      "gui.calamity.config.button_confirm": "Confirm",
+      "biome.calamity.the_abyss": "Terraria Beach",
+      "item.calamity.terraria_clay": "Clay",
+      "item.calamity.terraria_ash": "Ash",
+      "item.calamity.ark_of_the_cosmos": "Ark of the Cosmos",
+      "item.calamity.life_crystal": "Life Crystal",
+      "item.calamity.life_crystal_item": "Life Crystal",
+      "attribute.calamity.critical_strike_chance": "Critical Strike Chance",
+      "attribute.calamity.life_regen": "Life Regen",
+      "attribute.calamity.defense_terraria": "Defense",
+      "gui.calamity.defense_overlay.label_442": "44",
+      "gui.calamity.defense_overlay.label_441": "44",
+      "gui.calamity.defense_overlay.label_44": "44",
+      "gui.calamity.defense_overlay.label_443": "44",
+      "gui.calamity.defense_overlay.label_empty": "44",
+      "attribute.calamity.flight_ticks": "Flight Ticks",
+      "attribute.calamity.max_flight_ticks": "Max Flight Ticks",
+      "attribute.calamity.accessory_slot_count": "Accessory Slot Count",
+      "item.calamity.winds_fledgling": "Fledgling Wings",
+      "item.calamity.winds_fledgling.description_1": "   §7§oHorizontal Speed: 15mph",
+      "item.calamity.winds_fledgling.description_0": "   §7§oFlight Time: 0.42s",
+      "item.calamity.winds_fledgling.description_2": "   §7§oVertical Multiplier: 1.5x",
+      "key.calamity.fly_button": "Fly",
+      "attribute.calamity.horizontal_boost": "Horizontal Boost",
+      "attribute.calamity.vertical_boost": "Vertical Boost",
+      "item.calamity.wingsof_rebirth.description_2": "   §7§oVertical Multiplier: 3x",
+      "item.calamity.wingsof_rebirth.description_1": "   §7§oHorizontal Speed: 60mph",
+      "item.calamity.wingsof_rebirth.description_0": "   §7§oFlight Time: 6s",
+      "item.calamity.wingsof_rebirth": "Wings of Rebirth",
+      "entity.calamity.slime_ai": "AI Template: Slime",
+      "item.calamity.slime_ai_spawn_egg": "AI Template: Slime Spawn Egg",
+      "entity.calamity.demon_eye_ai": "AI Template: Demon Eye",
+      "item.calamity.demon_eye_ai_spawn_egg": "AI Template: Demon Eye Spawn Egg",
+      "item.calamity.worm_head_ai_spawn_egg": "AI Template: Worm Head Spawn Egg",
+      "entity.calamity.worm_head_ai": "AI Template: Worm Head"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/calamity/init/CalamityModAttributes.java",
+      "src/main/java/net/mcreator/calamity/init/CalamityModScreens.java",
+      "src/main/java/net/mcreator/calamity/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/calamity/init/CalamityModMenus.java",
+      "src/main/java/net/mcreator/calamity/init/CalamityModGameRules.java",
+      "src/main/java/net/mcreator/calamity/init/CalamityModKeyMappings.java",
+      "src/main/java/net/mcreator/calamity/init/CalamityModBlocks.java",
+      "src/main/java/net/mcreator/calamity/init/CalamityModItems.java",
+      "src/main/java/net/mcreator/calamity/init/CalamityModEntities.java",
+      "src/main/java/net/mcreator/calamity/init/CalamityModEntityRenderers.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/calamity/init/CalamityModTabs.java",
+      "src/main/resources/assets/calamity/sounds.json",
+      "src/main/java/net/mcreator/calamity/network/CalamityModVariables.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/calamity/init/CalamityModSounds.java",
+      "src/main/java/net/mcreator/calamity/CalamityMod.java",
+      "src/main/java/net/mcreator/calamity/init/CalamityModModels.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "1 - Pre-Hardmode",
+        "children": [
+          {
+            "name": "Tools",
+            "children": []
+          },
+          {
+            "name": "Recipes",
+            "children": []
+          },
+          {
+            "name": "Enemies",
+            "children": []
+          },
+          {
+            "name": "Items",
+            "children": []
+          },
+          {
+            "name": "Loot Tables",
+            "children": []
+          },
+          {
+            "name": "Block",
+            "children": [
+              {
+                "name": "Extra Procedures",
+                "children": []
+              },
+              {
+                "name": "Nearby Stations",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Bosses",
+            "children": []
+          },
+          {
+            "name": "Armors",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "2 - Hardmode",
+        "children": []
+      },
+      {
+        "name": "3 - Post Moon-Lord",
+        "children": []
+      },
+      {
+        "name": "X - Misc.",
+        "children": [
+          {
+            "name": "Rage and Adrenaline",
+            "children": []
+          },
+          {
+            "name": "Boss Bar UI",
+            "children": []
+          },
+          {
+            "name": "Difficulties",
+            "children": [
+              {
+                "name": "Procedure - SelectDifficulty",
+                "children": []
+              },
+              {
+                "name": "Procedure - ReturnIfDifficulty",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Accessories",
+            "children": []
+          },
+          {
+            "name": "Misc. Plus",
+            "children": []
+          },
+          {
+            "name": "Flight",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Bl - Blocks",
+        "children": [
+          {
+            "name": "Ores",
+            "children": []
+          },
+          {
+            "name": "Procedures",
+            "children": []
+          },
+          {
+            "name": "Non Item Blocks",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "B - Biomes",
+        "children": [
+          {
+            "name": "630 - Sky",
+            "children": []
+          },
+          {
+            "name": "500 - Surface",
+            "children": []
+          },
+          {
+            "name": "350 - Underground",
+            "children": []
+          },
+          {
+            "name": "100 - Caverns",
+            "children": []
+          },
+          {
+            "name": "0 - Hell",
+            "children": []
+          },
+          {
+            "name": "X - Special",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Di - Dimension",
+        "children": []
+      },
+      {
+        "name": "Ai - Templates",
+        "children": []
+      },
+      {
+        "name": "Sn - Spawning Logic",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "calamity",
+    "modName": "Calamity Cubic - Minecraft Port",
+    "version": "1.0.0",
+    "author": "Krameri Studios",
+    "websiteURL": "https://krameristudios.org",
+    "license": "N/A",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-26.1.2",
+    "credits": "Created by Talfor, Concepts from Calamity Team \u0026 Re-Logic",
+    "modElementsPackage": "net.mcreator.calamity"
+  },
+  "mcreatorVersion": 202600233518
+}

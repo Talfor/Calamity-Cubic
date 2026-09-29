@@ -1,0 +1,110 @@
+{
+  "rage_activate": {
+    "subtitle": "subtitles.rage_activate",
+    "sounds": [
+      {
+        "name": "calamity:rageactivate",
+        "stream": false
+      }
+    ]
+  },
+  "rage_full": {
+    "subtitle": "subtitles.rage_full",
+    "sounds": [
+      {
+        "name": "calamity:fullrage",
+        "stream": false
+      }
+    ]
+  },
+  "rage_end": {
+    "subtitle": "subtitles.rage_end",
+    "sounds": [
+      {
+        "name": "calamity:rageend",
+        "stream": false
+      }
+    ]
+  },
+  "adrenaline_activate": {
+    "subtitle": "subtitles.adrenaline_activate",
+    "sounds": [
+      {
+        "name": "calamity:adrenalineactivate",
+        "stream": false
+      }
+    ]
+  },
+  "adrenaline_loss": {
+    "subtitle": "subtitles.adrenaline_loss",
+    "sounds": [
+      {
+        "name": "calamity:adrenalineloss",
+        "stream": false
+      }
+    ]
+  },
+  "adrenaline_full": {
+    "subtitle": "subtitles.adrenaline_full",
+    "sounds": [
+      {
+        "name": "calamity:fulladrenaline",
+        "stream": false
+      }
+    ]
+  },
+  "difficultyset_expert": {
+    "subtitle": "subtitles.difficultyset_expert",
+    "sounds": [
+      {
+        "name": "calamity:expertmode",
+        "stream": false
+      }
+    ]
+  },
+  "difficultyset_revengeance": {
+    "subtitle": "subtitles.difficultyset_revengeance",
+    "sounds": [
+      {
+        "name": "calamity:revengeancemode",
+        "stream": false
+      }
+    ]
+  },
+  "difficultyset_master": {
+    "subtitle": "subtitles.difficultyset_master",
+    "sounds": [
+      {
+        "name": "calamity:mastermode",
+        "stream": false
+      }
+    ]
+  },
+  "difficultyset_death": {
+    "subtitle": "subtitles.difficultyset_death",
+    "sounds": [
+      {
+        "name": "calamity:deathmode",
+        "stream": false
+      }
+    ]
+  },
+  "difficultyset_legendary": {
+    "subtitle": "subtitles.difficultyset_legendary",
+    "sounds": [
+      {
+        "name": "calamity:legendarymode",
+        "stream": false
+      }
+    ]
+  },
+  "difficultyset_malice": {
+    "subtitle": "subtitles.difficultyset_malice",
+    "sounds": [
+      {
+        "name": "calamity:malicemode",
+        "stream": false
+      }
+    ]
+  }
+}

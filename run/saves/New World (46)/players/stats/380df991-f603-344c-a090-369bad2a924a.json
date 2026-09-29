@@ -1,0 +1,48 @@
+{
+  "stats": {
+    "minecraft:picked_up": {
+      "calamity:terraria_stone": 4,
+      "calamity:terraria_mud": 2,
+      "calamity:coin_copper": 62,
+      "calamity:gel": 7
+    },
+    "minecraft:killed": {
+      "calamity:green_slime": 4,
+      "calamity:blue_slime": 2
+    },
+    "minecraft:used": {
+      "calamity:terraria_mud": 2,
+      "calamity:copper_pickaxe": 6,
+      "minecraft:bow": 34
+    },
+    "minecraft:mined": {
+      "calamity:terraria_stone": 4,
+      "calamity:terraria_jungle_grass": 2
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 410,
+      "minecraft:walk_one_cm": 17008,
+      "minecraft:leave_game": 6,
+      "minecraft:mob_kills": 6,
+      "minecraft:walk_under_water_one_cm": 18703,
+      "minecraft:damage_taken": 3017,
+      "minecraft:damage_dealt": 1155,
+      "minecraft:play_time": 16458,
+      "minecraft:jump": 217,
+      "minecraft:time_since_death": 174,
+      "minecraft:sprint_one_cm": 20585,
+      "minecraft:fall_one_cm": 78672,
+      "minecraft:swim_one_cm": 11462,
+      "minecraft:total_world_time": 16972,
+      "minecraft:fly_one_cm": 312286,
+      "minecraft:walk_on_water_one_cm": 2054,
+      "minecraft:crouch_one_cm": 28,
+      "minecraft:sneak_time": 738,
+      "minecraft:deaths": 3
+    },
+    "minecraft:killed_by": {
+      "minecraft:wither": 1
+    }
+  },
+  "DataVersion": 4790
+}

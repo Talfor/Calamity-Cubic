@@ -1,0 +1,12 @@
+{
+  "_fv": 89,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "Difficulty",
+    "description": "§4How Calamity Cubic determines difficulty. 0: Classic, 1: Expert, 2: Revengeance, 3: Master, 4: Death, 5: Legendary, 6: Malice",
+    "category": "MISC",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 0
+  }
+}

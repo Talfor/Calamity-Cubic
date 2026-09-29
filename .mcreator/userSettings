@@ -1,0 +1,39 @@
+{
+  "workspacePanelIconSize": "LARGE",
+  "workspacePanelSortType": "TYPE",
+  "workspacePanelSortAscending": true,
+  "projectBrowserState": {
+    "expandedPaths": [
+      "[, Calamity Cubic - Minecraft Port]",
+      "[, Calamity Cubic - Minecraft Port, Source (Gradle)]",
+      "[, Calamity Cubic - Minecraft Port, Source (Gradle), C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\java\\net]",
+      "[, Calamity Cubic - Minecraft Port, Source (Gradle), C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\java\\net, C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\java\\net\\mcreator]",
+      "[, Calamity Cubic - Minecraft Port, Source (Gradle), C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\java\\net, C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\java\\net\\mcreator, C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\java\\net\\mcreator\\calamity]",
+      "[, Calamity Cubic - Minecraft Port, Source (Gradle), C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\java\\net, C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\java\\net\\mcreator, C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\java\\net\\mcreator\\calamity, C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\java\\net\\mcreator\\calamity\\network]",
+      "[, Calamity Cubic - Minecraft Port, Resources (Gradle)]",
+      "[, Calamity Cubic - Minecraft Port, Resources (Gradle), C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\resources\\assets]",
+      "[, Calamity Cubic - Minecraft Port, Resources (Gradle), C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\resources\\data]",
+      "[, Calamity Cubic - Minecraft Port, Resources (Gradle), C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\resources\\data, C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\resources\\data\\minecraft]",
+      "[, Calamity Cubic - Minecraft Port, Resources (Gradle), C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\resources\\data, C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\resources\\data\\minecraft, C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\resources\\data\\minecraft\\worldgen]",
+      "[, Calamity Cubic - Minecraft Port, Resources (Gradle), C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\resources\\data, C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\resources\\data\\minecraft, C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\resources\\data\\minecraft\\worldgen, C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\resources\\data\\minecraft\\worldgen\\density_function]",
+      "[, Calamity Cubic - Minecraft Port, Resources (Gradle), C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\resources\\data, C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\resources\\data\\minecraft, C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\resources\\data\\minecraft\\worldgen, C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\resources\\data\\minecraft\\worldgen\\density_function, C:\\Users\\kyleb\\MCreatorWorkspaces\\calamity\\src\\main\\resources\\data\\minecraft\\worldgen\\density_function\\overworld]",
+      "[, Calamity Cubic - Minecraft Port, Models]"
+    ]
+  },
+  "leftDockState": {
+    "dockSizes": {
+      "project_browser": 280,
+      "local_history": 280
+    }
+  },
+  "rightDockState": {
+    "dockSizes": {}
+  },
+  "bottomDockState": {
+    "dockSizes": {
+      "console": 300,
+      "code_viewer": 300,
+      "debugger": 300
+    }
+  }
+}

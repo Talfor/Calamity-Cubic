@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "calamity:block/hellstone_placed_png",
+    "particle": "calamity:block/hellstone_placed_png"
+  }
+}

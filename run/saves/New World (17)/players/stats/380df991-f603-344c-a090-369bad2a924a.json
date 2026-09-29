@@ -1,0 +1,40 @@
+{
+  "stats": {
+    "minecraft:killed": {
+      "calamity:blue_slime": 1
+    },
+    "minecraft:mined": {
+      "calamity:terraria_grass": 2,
+      "calamity:terraria_log": 7
+    },
+    "minecraft:used": {
+      "calamity:terraria_furnace": 1,
+      "calamity:copper_shortsword": 5,
+      "calamity:blue_slime_spawn_egg": 1,
+      "calamity:copper_axe": 7,
+      "calamity:copper_pickaxe": 2
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 8934,
+      "minecraft:walk_one_cm": 8059,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 1,
+      "minecraft:damage_dealt": 250,
+      "minecraft:play_time": 4467,
+      "minecraft:jump": 52,
+      "minecraft:time_since_death": 4467,
+      "minecraft:sprint_one_cm": 4178,
+      "minecraft:fall_one_cm": 2704,
+      "minecraft:total_world_time": 4560,
+      "minecraft:fly_one_cm": 122693,
+      "minecraft:sneak_time": 283
+    },
+    "minecraft:picked_up": {
+      "calamity:coin_copper": 25,
+      "calamity:terraria_dirt": 1,
+      "calamity:terraria_wood": 23,
+      "calamity:gel": 1
+    }
+  },
+  "DataVersion": 4790
+}

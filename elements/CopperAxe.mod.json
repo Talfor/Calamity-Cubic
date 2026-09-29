@@ -1,0 +1,43 @@
+{
+  "_fv": 89,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Axe",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "copper_axe",
+    "customModelName": "giant_item:copper_axe",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "copper_axe",
+    "name": "Copper Axe",
+    "rarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      "CUSTOM:TerrariaTab"
+    ],
+    "efficiency": 3.5,
+    "attackSpeed": 0.9,
+    "enchantability": 2,
+    "damageVsEntity": 2.0,
+    "usageCount": 0,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "mainhand",
+        "attribute": "ENTITY_REACH",
+        "amount": -0.2,
+        "operation": "ADD_MULTIPLIED_BASE"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

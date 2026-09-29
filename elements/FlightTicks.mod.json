@@ -1,0 +1,14 @@
+{
+  "_fv": 89,
+  "_type": "attribute",
+  "definition": {
+    "name": "Flight Ticks",
+    "minValue": -21.0,
+    "maxValue": 1200.0,
+    "defaultValue": 0.0,
+    "sentiment": "POSITIVE",
+    "addToAllEntities": false,
+    "addToPlayers": true,
+    "entities": []
+  }
+}

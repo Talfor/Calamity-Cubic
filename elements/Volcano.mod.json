@@ -1,0 +1,43 @@
+{
+  "_fv": 89,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "volcano_png",
+    "customModelName": "giant_item:volcano",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "volcano_png",
+    "name": "Volcano",
+    "rarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      "CUSTOM:TerrariaTab"
+    ],
+    "efficiency": 20.0,
+    "attackSpeed": 1.2,
+    "enchantability": 22,
+    "damageVsEntity": 40.0,
+    "usageCount": 0,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": true,
+    "blockDropsTier": "IRON",
+    "blocksAffected": [],
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "mainhand",
+        "attribute": "ENTITY_REACH",
+        "amount": 1.0,
+        "operation": "ADD_MULTIPLIED_TOTAL"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

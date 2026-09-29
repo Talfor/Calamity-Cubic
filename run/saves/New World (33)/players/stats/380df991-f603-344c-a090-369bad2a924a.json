@@ -1,0 +1,20 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "calamity:terraria_furnace": 1,
+      "calamity:anvil": 1,
+      "calamity:work_bench": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 2837,
+      "minecraft:walk_one_cm": 372,
+      "minecraft:total_world_time": 2920,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 614,
+      "minecraft:play_time": 2837,
+      "minecraft:jump": 1,
+      "minecraft:time_since_death": 2837
+    }
+  },
+  "DataVersion": 4790
+}

@@ -1,0 +1,34 @@
+{
+  "stats": {
+    "minecraft:mined": {
+      "calamity:terraria_gold_ore": 1,
+      "calamity:terraria_stone": 2,
+      "calamity:terraria_platinum_ore": 1
+    },
+    "minecraft:picked_up": {
+      "calamity:terraria_stone": 2,
+      "calamity:terraria_platinum_ore": 1,
+      "calamity:terraria_gold_ore": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 2504,
+      "minecraft:walk_one_cm": 1216,
+      "minecraft:leave_game": 1,
+      "minecraft:walk_under_water_one_cm": 15872,
+      "minecraft:play_time": 2504,
+      "minecraft:jump": 13,
+      "minecraft:time_since_death": 2504,
+      "minecraft:sprint_one_cm": 1281,
+      "minecraft:fall_one_cm": 1325,
+      "minecraft:total_world_time": 2928,
+      "minecraft:fly_one_cm": 137923,
+      "minecraft:walk_on_water_one_cm": 1206,
+      "minecraft:sneak_time": 270
+    },
+    "minecraft:used": {
+      "calamity:terraria_stone": 2,
+      "calamity:copper_pickaxe": 4
+    }
+  },
+  "DataVersion": 4790
+}

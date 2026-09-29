@@ -1,0 +1,38 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="N/A"
+
+[[mods]]
+modId="calamity"
+version="1.0.0"
+displayName="Calamity Cubic - Minecraft Port"
+displayURL="https://krameristudios.org"
+credits="Created by Talfor, Concepts from Calamity Team & Re-Logic"
+authors="Krameri Studios"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+
+# Start of user code block custom mixins
+# End of user code block custom mixins
+
+[[dependencies.calamity]]
+    modId="neoforge"
+    type="required"
+    versionRange="[26.1.2.95,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.calamity]]
+    modId="minecraft"
+    type="required"
+    versionRange="[26.1.2]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

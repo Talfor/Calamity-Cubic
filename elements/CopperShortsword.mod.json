@@ -1,0 +1,43 @@
+{
+  "_fv": 89,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Special",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "copper_shortsword",
+    "customModelName": "giant_item:copper_shortsword",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "copper_shortsword",
+    "name": "Copper Shortsword",
+    "rarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      "CUSTOM:TerrariaTab"
+    ],
+    "efficiency": 2.0,
+    "attackSpeed": 2.2,
+    "enchantability": 2,
+    "damageVsEntity": 5.0,
+    "usageCount": 0,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "mainhand",
+        "attribute": "ENTITY_REACH",
+        "amount": -0.2,
+        "operation": "ADD_MULTIPLIED_BASE"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

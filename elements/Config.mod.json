@@ -1,0 +1,56 @@
+{
+  "_fv": 89,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 206,
+    "height": 142,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "uibackground_ds.png",
+          "use1Xscale": false,
+          "x": 114,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "calamitybool",
+          "text": "Calamity Content",
+          "x": 116,
+          "y": 54,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_confirm",
+          "text": "Confirm",
+          "isUndecorated": false,
+          "onClick": "ConfigThisGUIIsClosed",
+          "width": 60,
+          "height": 20,
+          "x": 251,
+          "y": 165,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

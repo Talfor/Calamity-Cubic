@@ -1,0 +1,57 @@
+{
+  "stats": {
+    "minecraft:killed": {
+      "calamity:blue_slime": 1
+    },
+    "minecraft:used": {
+      "calamity:terraria_furnace": 2,
+      "calamity:blue_slime_spawn_egg": 1,
+      "calamity:anvil": 2,
+      "minecraft:copper_axe": 1,
+      "calamity:greatsword_of_judgement": 1,
+      "calamity:work_bench": 3
+    },
+    "minecraft:mined": {
+      "calamity:terraria_log": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 6937,
+      "minecraft:walk_one_cm": 8564,
+      "minecraft:leave_game": 4,
+      "minecraft:mob_kills": 1,
+      "minecraft:walk_under_water_one_cm": 519,
+      "minecraft:damage_taken": 10,
+      "minecraft:damage_dealt": 290,
+      "minecraft:play_time": 6937,
+      "minecraft:jump": 70,
+      "minecraft:time_since_death": 6937,
+      "minecraft:drop": 16,
+      "minecraft:sprint_one_cm": 4935,
+      "minecraft:fall_one_cm": 3575,
+      "minecraft:total_world_time": 7146,
+      "minecraft:fly_one_cm": 131328,
+      "minecraft:walk_on_water_one_cm": 205,
+      "minecraft:sneak_time": 173
+    },
+    "minecraft:picked_up": {
+      "calamity:terraria_copper_ingot": 89,
+      "calamity:copper_pickaxe": 5,
+      "calamity:copper_shortsword": 4,
+      "calamity:coin_copper": 25,
+      "calamity:work_bench": 4,
+      "calamity:copper_axe": 1,
+      "calamity:terraria_wood": 139,
+      "calamity:gel": 2
+    },
+    "minecraft:dropped": {
+      "calamity:copper_axe": 1,
+      "calamity:work_bench": 4,
+      "calamity:terraria_copper_ingot": 89,
+      "calamity:gel": 1,
+      "calamity:copper_pickaxe": 5,
+      "calamity:copper_shortsword": 4,
+      "calamity:terraria_wood": 99
+    }
+  },
+  "DataVersion": 4790
+}

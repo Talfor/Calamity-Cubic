@@ -1,0 +1,36 @@
+{
+  "stats": {
+    "minecraft:dropped": {
+      "minecraft:iron_boots": 2
+    },
+    "minecraft:used": {
+      "minecraft:acacia_door": 1,
+      "minecraft:turtle_helmet": 1,
+      "minecraft:end_rod": 1,
+      "minecraft:soul_lantern": 1,
+      "minecraft:iron_boots": 2,
+      "minecraft:sea_lantern": 2
+    },
+    "minecraft:picked_up": {
+      "calamity:copper_axe": 4,
+      "calamity:terraria_wood": 9
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 8510,
+      "minecraft:walk_one_cm": 2188,
+      "minecraft:leave_game": 1,
+      "minecraft:walk_under_water_one_cm": 110532,
+      "minecraft:play_time": 8510,
+      "minecraft:jump": 29,
+      "minecraft:time_since_death": 8510,
+      "minecraft:drop": 2,
+      "minecraft:sprint_one_cm": 1625,
+      "minecraft:swim_one_cm": 84883,
+      "minecraft:total_world_time": 11617,
+      "minecraft:fly_one_cm": 123777,
+      "minecraft:walk_on_water_one_cm": 16870,
+      "minecraft:sneak_time": 1279
+    }
+  },
+  "DataVersion": 4790
+}

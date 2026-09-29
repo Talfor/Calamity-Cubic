@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "calamity:block/gold_ore_placed_png",
+    "particle": "calamity:block/gold_ore_placed_png"
+  }
+}

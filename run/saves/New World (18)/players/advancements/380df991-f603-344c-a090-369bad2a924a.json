@@ -1,0 +1,117 @@
+{
+  "calamity:recipes/terraria_crafting_table_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-09-26 02:56:39 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-09-26 02:55:34 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2026-09-26 02:58:18 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/cherry_boat": {
+    "criteria": {
+      "in_water": "2026-09-26 02:57:31 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/bamboo_raft": {
+    "criteria": {
+      "in_water": "2026-09-26 02:57:31 -0600"
+    },
+    "done": true
+  },
+  "calamity:recipes/copper_pickaxe_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-09-26 02:56:39 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2026-09-26 02:57:31 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2026-09-26 02:57:31 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2026-09-26 02:57:31 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/mangrove_boat": {
+    "criteria": {
+      "in_water": "2026-09-26 02:57:31 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2026-09-26 02:57:31 -0600"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2026-09-26 02:57:11 -0600"
+    },
+    "done": true
+  },
+  "calamity:recipes/terraria_torch_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-09-26 02:56:39 -0600"
+    },
+    "done": true
+  },
+  "calamity:recipes/copper_shortsword_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-09-26 02:58:10 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/pale_oak_boat": {
+    "criteria": {
+      "in_water": "2026-09-26 02:57:31 -0600"
+    },
+    "done": true
+  },
+  "calamity:recipes/copper_axe_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-09-26 02:56:39 -0600"
+    },
+    "done": true
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2026-09-26 02:56:51 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2026-09-26 02:57:31 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2026-09-26 02:57:31 -0600"
+    },
+    "done": true
+  },
+  "DataVersion": 4790
+}

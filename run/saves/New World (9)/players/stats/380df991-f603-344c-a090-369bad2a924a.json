@@ -1,0 +1,31 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:creeper_spawn_egg": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:dirt": 24
+    },
+    "minecraft:killed": {
+      "minecraft:wither": 1,
+      "minecraft:ender_dragon": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 2349,
+      "minecraft:walk_one_cm": 1691,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 2,
+      "minecraft:walk_under_water_one_cm": 253,
+      "minecraft:play_time": 2349,
+      "minecraft:damage_dealt": 3616,
+      "minecraft:jump": 15,
+      "minecraft:time_since_death": 2349,
+      "minecraft:sprint_one_cm": 485,
+      "minecraft:total_world_time": 2512,
+      "minecraft:fly_one_cm": 34002,
+      "minecraft:walk_on_water_one_cm": 270,
+      "minecraft:sneak_time": 59
+    }
+  },
+  "DataVersion": 4790
+}

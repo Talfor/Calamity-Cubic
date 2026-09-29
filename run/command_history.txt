@@ -1,0 +1,50 @@
+/locate biome calamity:calamity_sulphurous_sea
+/time add 500
+/time add 500s
+/tp @s 520 560 233
+/gamemode creative
+/tp ~ ~200 ~
+/gamemode spectator
+/gamemode creative
+/gamemode spectator
+/locate biome calamity:the_abyss
+/tp @s 418 386 -294
+/locate biome calamity:calamity_sulphurous_sea
+/tick freeze
+/gamemode creative
+/tick unfreeze
+/tick rate 200
+/gamerule random_tick_speed
+/gamerule random_tick_speed 0
+/tick rate 20
+/effect give @s minecraft:night_vision infinite 255 true
+/tp ~ 500 ~
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/clear
+/gamemode creative
+/gamemode survival
+/give @s calamity:life_crystal_item 64
+/gamemode creative
+/gamemode spectator
+/effect give @s minecraft:night_vision infinite 255 true
+/tp ~ 700 ~
+/locate biome calamity:calamity_sulphurous_sea
+/tp @s -701 700 507
+/gamemode creative
+/gamemode spectator
+/gamemode creative
+/effect clear
+/effect give @s minecraft:darkness infinite 255 true
+/effect clear
+/effect give @s minecraft:night_vision infinite 255 true
+/gamemode spectator
+/tick freeze
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/summon cat ^15 ^15 ^15
+/tick unfreeze
+/summon wither ^15 ^15 ^15
+/summon tnt

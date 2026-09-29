@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "calamity:block/dirt_block",
+    "particle": "calamity:block/dirt_block"
+  }
+}

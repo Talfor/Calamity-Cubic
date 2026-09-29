@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "calamity:underground",
+  "features": "calamity:terraria_tin_ore",
+  "step": "underground_ores"
+}

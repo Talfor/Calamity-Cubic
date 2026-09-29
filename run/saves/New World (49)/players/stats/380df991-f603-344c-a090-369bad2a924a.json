@@ -1,0 +1,43 @@
+{
+  "stats": {
+    "minecraft:dropped": {
+      "calamity:wingsof_rebirth": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 556,
+      "minecraft:walk_one_cm": 3657,
+      "minecraft:leave_game": 1,
+      "minecraft:walk_under_water_one_cm": 240520,
+      "minecraft:damage_taken": 1070,
+      "minecraft:damage_dealt": 12100,
+      "minecraft:play_time": 27305,
+      "minecraft:jump": 66,
+      "minecraft:time_since_death": 250,
+      "minecraft:drop": 1,
+      "minecraft:sprint_one_cm": 4272,
+      "minecraft:fall_one_cm": 7462,
+      "minecraft:swim_one_cm": 44209,
+      "minecraft:total_world_time": 27411,
+      "minecraft:fly_one_cm": 388295,
+      "minecraft:walk_on_water_one_cm": 4145,
+      "minecraft:sneak_time": 2045,
+      "minecraft:deaths": 1
+    },
+    "minecraft:picked_up": {
+      "calamity:work_bench": 1,
+      "calamity:terraria_wood": 12
+    },
+    "minecraft:mined": {
+      "calamity:terraria_log": 1,
+      "calamity:work_bench": 1
+    },
+    "minecraft:used": {
+      "calamity:terraria_furnace": 1,
+      "calamity:anvil": 1,
+      "calamity:copper_axe": 1,
+      "calamity:copper_pickaxe": 1,
+      "calamity:work_bench": 2
+    }
+  },
+  "DataVersion": 4790
+}

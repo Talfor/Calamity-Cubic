@@ -1,0 +1,102 @@
+{
+  "_fv": 89,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "normal_indicator_png.png",
+          "use1Xscale": false,
+          "displayCondition": "ReturnIfDifficulty0",
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "expert_indicator_png.png",
+          "use1Xscale": false,
+          "displayCondition": "ReturnIfDifficulty1",
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "master_indicator_png.png",
+          "use1Xscale": false,
+          "displayCondition": "ReturnIfDifficulty3",
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "legendary_indicator_png.png",
+          "use1Xscale": false,
+          "displayCondition": "ReturnIfDifficulty5",
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "revengeance_indicator_png.png",
+          "use1Xscale": false,
+          "displayCondition": "ReturnIfDifficulty2",
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "death_indicator_png.png",
+          "use1Xscale": false,
+          "displayCondition": "ReturnIfDifficulty4",
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "malice_indicator_png.png",
+          "use1Xscale": false,
+          "displayCondition": "ReturnIfDifficulty6",
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0,
+          "locked": false
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
