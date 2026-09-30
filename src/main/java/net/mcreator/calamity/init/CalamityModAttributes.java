@@ -10,11 +10,16 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.entity.ai.attributes.RangedAttribute;
+import net.minecraft.world.entity.ai.attributes.DefaultAttributes;
 import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.calamity.CalamityMod;
+
+import java.util.stream.Collectors;
+import java.util.List;
 
 @EventBusSubscriber
 public class CalamityModAttributes {
@@ -28,6 +33,8 @@ public class CalamityModAttributes {
 	public static final DeferredHolder<Attribute, Attribute> ACCESSORY_SLOT_COUNT = REGISTRY.register("accessory_slot_count", () -> new RangedAttribute("attribute.calamity.accessory_slot_count", 5d, 1d, 9d).setSyncable(true));
 	public static final DeferredHolder<Attribute, Attribute> HORIZONTAL_BOOST = REGISTRY.register("horizontal_boost", () -> new RangedAttribute("attribute.calamity.horizontal_boost", 0d, 0d, 100000d).setSyncable(true));
 	public static final DeferredHolder<Attribute, Attribute> VERTICAL_BOOST = REGISTRY.register("vertical_boost", () -> new RangedAttribute("attribute.calamity.vertical_boost", 0d, 0d, 100000d).setSyncable(true));
+	public static final DeferredHolder<Attribute, Attribute> WORM_AIID = REGISTRY.register("worm_aiid", () -> new RangedAttribute("attribute.calamity.worm_aiid", -1d, -1d, 1000000000d).setSyncable(true));
+	public static final DeferredHolder<Attribute, Attribute> WORM_AI_TAG = REGISTRY.register("worm_ai_tag", () -> new RangedAttribute("attribute.calamity.worm_ai_tag", -1d, -1d, 1000000000d).setSyncable(true));
 
 	@SubscribeEvent
 	public static void addAttributes(EntityAttributeModificationEvent event) {
@@ -40,5 +47,8 @@ public class CalamityModAttributes {
 		event.add(EntityType.PLAYER, ACCESSORY_SLOT_COUNT);
 		event.add(EntityType.PLAYER, HORIZONTAL_BOOST);
 		event.add(EntityType.PLAYER, VERTICAL_BOOST);
+		List.of(CalamityModEntities.WORM_BODY_AI.get()).stream().filter(DefaultAttributes::hasSupplier).map(entityType -> (EntityType<? extends LivingEntity>) entityType).collect(Collectors.toList()).forEach(entity -> event.add(entity, WORM_AIID));
+		List.of(CalamityModEntities.WORM_BODY_AI.get(), CalamityModEntities.WORM_HEAD_AI.get()).stream().filter(DefaultAttributes::hasSupplier).map(entityType -> (EntityType<? extends LivingEntity>) entityType).collect(Collectors.toList())
+				.forEach(entity -> event.add(entity, WORM_AI_TAG));
 	}
 }

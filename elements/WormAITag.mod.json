@@ -1,0 +1,17 @@
+{
+  "_fv": 89,
+  "_type": "attribute",
+  "definition": {
+    "name": "Worm AI Tag",
+    "minValue": -1.0,
+    "maxValue": 1.0E9,
+    "defaultValue": -1.0,
+    "sentiment": "POSITIVE",
+    "addToAllEntities": false,
+    "addToPlayers": false,
+    "entities": [
+      "CUSTOM:WormBodyAI",
+      "CUSTOM:WormHeadAI"
+    ]
+  }
+}

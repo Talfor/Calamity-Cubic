@@ -146,5 +146,8 @@
   "entity.calamity.demon_eye_ai": "AI Template: Demon Eye",
   "item.calamity.demon_eye_ai_spawn_egg": "AI Template: Demon Eye Spawn Egg",
   "item.calamity.worm_head_ai_spawn_egg": "AI Template: Worm Head Spawn Egg",
-  "entity.calamity.worm_head_ai": "AI Template: Worm Head"
+  "entity.calamity.worm_head_ai": "AI Template: Worm Head",
+  "entity.calamity.worm_body_ai": "AI Template: Worm Body",
+  "attribute.calamity.worm_aiid": "Worm AI ID",
+  "attribute.calamity.worm_ai_tag": "Worm AI Tag"
 }

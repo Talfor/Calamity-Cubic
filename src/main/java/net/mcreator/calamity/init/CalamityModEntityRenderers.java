@@ -9,6 +9,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.calamity.client.renderer.WormHeadAIRenderer;
+import net.mcreator.calamity.client.renderer.WormBodyAIRenderer;
 import net.mcreator.calamity.client.renderer.SlimeAIRenderer;
 import net.mcreator.calamity.client.renderer.DemonEyeAIRenderer;
 
@@ -19,5 +20,6 @@ public class CalamityModEntityRenderers {
 		event.registerEntityRenderer(CalamityModEntities.SLIME_AI.get(), SlimeAIRenderer::new);
 		event.registerEntityRenderer(CalamityModEntities.DEMON_EYE_AI.get(), DemonEyeAIRenderer::new);
 		event.registerEntityRenderer(CalamityModEntities.WORM_HEAD_AI.get(), WormHeadAIRenderer::new);
+		event.registerEntityRenderer(CalamityModEntities.WORM_BODY_AI.get(), WormBodyAIRenderer::new);
 	}
 }

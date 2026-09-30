@@ -66,7 +66,7 @@
       "fixedValue": true
     },
     "pushedByFluids": {
-      "fixedValue": false
+      "fixedValue": true
     },
     "flyingMob": true,
     "inventorySize": 9,
@@ -79,7 +79,7 @@
     "immuneToArrows": false,
     "immuneToFallDamage": false,
     "immuneToCactus": false,
-    "immuneToDrowning": false,
+    "immuneToDrowning": true,
     "immuneToLightning": false,
     "immuneToPotions": false,
     "immuneToPlayer": false,
@@ -94,8 +94,17 @@
     "deathSound": "",
     "stepSound": "",
     "raidCelebrationSound": "",
-    "entityDataEntries": [],
+    "entityDataEntries": [
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "segments",
+        "type": "integer",
+        "value": 10
+      }
+    ],
     "onMobTickUpdate": "WormHeadAITick",
+    "onInitialSpawn": "WormHeadSpawn",
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"></block></xml>",

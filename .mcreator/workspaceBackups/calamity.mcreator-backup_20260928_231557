@@ -3484,10 +3484,10 @@
       "registry_name": "worm_head_ai",
       "metadata": {
         "files": [
-          "src/main/resources/assets/calamity/models/item/worm_head_ai_spawn_egg.json",
-          "src/main/java/net/mcreator/calamity/client/renderer/WormHeadAIRenderer.java",
+          "src/main/resources/assets/calamity/items/worm_head_ai_spawn_egg.json",
           "src/main/java/net/mcreator/calamity/entity/WormHeadAIEntity.java",
-          "src/main/resources/assets/calamity/items/worm_head_ai_spawn_egg.json"
+          "src/main/java/net/mcreator/calamity/client/renderer/WormHeadAIRenderer.java",
+          "src/main/resources/assets/calamity/models/item/worm_head_ai_spawn_egg.json"
         ]
       },
       "path": "~/Ai - Templates"
@@ -3558,6 +3558,113 @@
         ],
         "files": [
           "src/main/java/net/mcreator/calamity/procedures/WormHeadAITickProcedure.java"
+        ]
+      },
+      "path": "~/Ai - Templates"
+    },
+    {
+      "name": "WormBodyAI",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "worm_body_ai",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/calamity/entity/WormBodyAIEntity.java",
+          "src/main/java/net/mcreator/calamity/client/renderer/WormBodyAIRenderer.java",
+          "src/main/resources/assets/calamity/items/worm_body_ai_spawn_egg.json"
+        ]
+      },
+      "path": "~/Ai - Templates"
+    },
+    {
+      "name": "WormAIID",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "worm_aiid",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Ai - Templates"
+    },
+    {
+      "name": "WormAITag",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "worm_ai_tag",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Ai - Templates"
+    },
+    {
+      "name": "WormHeadSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "worm_head_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/WormHeadSpawnProcedure.java"
+        ]
+      },
+      "path": "~/Ai - Templates"
+    },
+    {
+      "name": "WormBodyAITick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "worm_body_ai_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/calamity/procedures/WormBodyAITickProcedure.java"
         ]
       },
       "path": "~/Ai - Templates"
@@ -3860,6 +3967,9 @@
     ],
     "BLOCKS:minecraft:mineable/axe": [
       "~TerrariaLog@CUSTOM:TerrariaLog"
+    ],
+    "ENTITIES:mod:worm_bodies": [
+      "CUSTOM:WormBodyAI"
     ]
   },
   "tab_element_order": {
@@ -3921,7 +4031,8 @@
       "TerrariaJungleGrass",
       "LifeCrystal",
       "DemonEyeAI",
-      "WormHeadAI"
+      "WormHeadAI",
+      "WormBodyAI"
     ],
     "CUSTOM:CalamityTab": [
       "GreatswordOfJudgement",
@@ -4078,30 +4189,33 @@
       "entity.calamity.demon_eye_ai": "AI Template: Demon Eye",
       "item.calamity.demon_eye_ai_spawn_egg": "AI Template: Demon Eye Spawn Egg",
       "item.calamity.worm_head_ai_spawn_egg": "AI Template: Worm Head Spawn Egg",
-      "entity.calamity.worm_head_ai": "AI Template: Worm Head"
+      "entity.calamity.worm_head_ai": "AI Template: Worm Head",
+      "entity.calamity.worm_body_ai": "AI Template: Worm Body",
+      "attribute.calamity.worm_aiid": "Worm AI ID",
+      "attribute.calamity.worm_ai_tag": "Worm AI Tag"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/calamity/init/CalamityModAttributes.java",
+      "src/main/java/net/mcreator/calamity/init/CalamityModMenus.java",
       "src/main/java/net/mcreator/calamity/init/CalamityModScreens.java",
       "src/main/java/net/mcreator/calamity/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/mcreator/calamity/init/CalamityModMenus.java",
       "src/main/java/net/mcreator/calamity/init/CalamityModGameRules.java",
       "src/main/java/net/mcreator/calamity/init/CalamityModKeyMappings.java",
       "src/main/java/net/mcreator/calamity/init/CalamityModBlocks.java",
       "src/main/java/net/mcreator/calamity/init/CalamityModItems.java",
       "src/main/java/net/mcreator/calamity/init/CalamityModEntities.java",
       "src/main/java/net/mcreator/calamity/init/CalamityModEntityRenderers.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/calamity/init/CalamityModTabs.java",
-      "src/main/resources/assets/calamity/sounds.json",
+      "src/main/java/net/mcreator/calamity/init/CalamityModModels.java",
       "src/main/java/net/mcreator/calamity/network/CalamityModVariables.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/java/net/mcreator/calamity/init/CalamityModSounds.java",
       "src/main/java/net/mcreator/calamity/CalamityMod.java",
-      "src/main/java/net/mcreator/calamity/init/CalamityModModels.java"
+      "src/main/resources/assets/calamity/sounds.json",
+      "src/main/java/net/mcreator/calamity/init/CalamityModTabs.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/calamity/init/CalamityModSounds.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/META-INF/neoforge.mods.toml"
     ]
   },
   "foldersRoot": {

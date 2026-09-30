@@ -18,6 +18,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.calamity.entity.WormHeadAIEntity;
+import net.mcreator.calamity.entity.WormBodyAIEntity;
 import net.mcreator.calamity.entity.SlimeAIEntity;
 import net.mcreator.calamity.entity.DemonEyeAIEntity;
 import net.mcreator.calamity.CalamityMod;
@@ -37,6 +38,10 @@ public class CalamityModEntities {
 			EntityType.Builder.<WormHeadAIEntity>of(WormHeadAIEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.notInPeaceful().sized(1f, 1f));
+	public static final DeferredHolder<EntityType<?>, EntityType<WormBodyAIEntity>> WORM_BODY_AI = register("worm_body_ai",
+			EntityType.Builder.<WormBodyAIEntity>of(WormBodyAIEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.notInPeaceful().sized(1f, 1f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -49,6 +54,7 @@ public class CalamityModEntities {
 		SlimeAIEntity.init(event);
 		DemonEyeAIEntity.init(event);
 		WormHeadAIEntity.init(event);
+		WormBodyAIEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -56,5 +62,6 @@ public class CalamityModEntities {
 		event.put(SLIME_AI.get(), SlimeAIEntity.createAttributes().build());
 		event.put(DEMON_EYE_AI.get(), DemonEyeAIEntity.createAttributes().build());
 		event.put(WORM_HEAD_AI.get(), WormHeadAIEntity.createAttributes().build());
+		event.put(WORM_BODY_AI.get(), WormBodyAIEntity.createAttributes().build());
 	}
 }
