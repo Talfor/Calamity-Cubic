@@ -1,0 +1,12 @@
+/.eclipse
+/.gradle
+/.mcreator
+/build
+/gradle
+/run
+
+.properties
+.bat
+.gradle
+
+gradlew
